@@ -465,12 +465,13 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 .play-btn svg{margin-left:3px;}
 
 /* Stories / testimonial block */
-.stories-grid{display:grid; grid-template-columns:1.2fr 1fr; gap:22px; align-items:stretch;}
+.stories-grid{display:grid; grid-template-columns:1.2fr minmax(0,1fr); gap:22px; align-items:stretch;}
 .story-feature{background:var(--white); border:1px solid rgba(26,26,46,.08); border-radius:var(--radius); padding:36px; display:flex; flex-direction:column; justify-content:space-between;}
 .story-feature blockquote{font-family:var(--display); font-size:1.2rem; font-weight:500; color:var(--navy); line-height:1.45;}
 .story-feature cite{display:block; margin-top:20px; font-family:var(--mono); font-size:.8rem; color:var(--ink-soft); font-style:normal;}
-.story-side{display:flex; flex-direction:column; gap:22px;}
-.story-side .img-ph{aspect-ratio:16/10; flex:1;}
+.story-side{display:flex; flex-direction:column; gap:22px; min-width:0;}
+/* min-width:0 stops the stretched height transferring through aspect-ratio into a huge min-width */
+.story-side .img-ph{aspect-ratio:16/10; flex:1; min-width:0;}
 
 /* Partner / trust logo strip */
 .logo-strip{display:grid; grid-template-columns:repeat(6,1fr); gap:16px;}
@@ -492,8 +493,9 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 .cta-photo-band p{color:rgba(255,255,255,.85); margin-top:10px; max-width:42ch;}
 
 /* Moments gallery strip */
-.moments-strip{display:grid; grid-template-columns:repeat(6,1fr); gap:12px;}
-.moments-strip .img-ph{aspect-ratio:1/1;}
+.moments-strip{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px;}
+/* min-height:140px + aspect-ratio would transfer into a 140px min-WIDTH and overflow the viewport */
+.moments-strip .img-ph{aspect-ratio:1/1; min-height:0; min-width:0;}
 
 /* Mini stat chips (home impact teaser) */
 .mini-stat-row{display:flex; gap:14px; flex-wrap:wrap; margin-top:28px;}
@@ -530,7 +532,7 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .stories-grid{grid-template-columns:1fr;}
   .story-side{flex-direction:row;}
   .logo-strip{grid-template-columns:repeat(3,1fr);}
-  .moments-strip{grid-template-columns:repeat(3,1fr);}
+  .moments-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
   .hero-collage{height:364px; margin-top:-12px;}
 }
 @media (min-width:768px) and (max-width:960px){
@@ -576,7 +578,7 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .about-overlap-card{margin-top:-40px; margin-left:14px; margin-right:14px; padding:20px;}
   .pillar-photo-grid{grid-template-columns:1fr;}
   .logo-strip{grid-template-columns:repeat(2,1fr);}
-  .moments-strip{grid-template-columns:repeat(3,1fr);}
+  .moments-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
   .cta-photo-band .cta-content{padding:32px 22px;}
   .story-side{flex-direction:column;}
 }
@@ -604,7 +606,7 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .fact-chip{flex:1 1 100%;}
   .btn{font-size:0.9rem; padding:12px 20px;}
   .logo{font-size:1.05rem;}
-  .moments-strip{grid-template-columns:repeat(2,1fr);}
+  .moments-strip{grid-template-columns:repeat(2,minmax(0,1fr));}
   .logo-strip{grid-template-columns:1fr 1fr;}
   .hero-collage{grid-template-columns:1fr; grid-template-rows:auto; height:auto;}
   .hc-main, .hc-sub, .hc-sub2{grid-column:1; grid-row:auto; transform:none;}
