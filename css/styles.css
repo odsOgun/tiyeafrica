@@ -123,10 +123,15 @@ header{
 @keyframes pxIn{to{opacity:1; transform:scale(1);}}
 .px.blue{background:var(--blue);} .px.green{background:var(--green);} .px.orange{background:var(--orange);}
 .px.ghost{background:rgba(255,255,255,.06);} .px.white{background:rgba(255,255,255,.9);}
-.hero-strip{border-top:1px solid rgba(255,255,255,.1);}
-.hero-strip .wrap{display:flex; flex-wrap:wrap; gap:14px 42px; padding:26px 32px;}
-.hero-strip span{font-family:var(--mono); font-size:0.78rem; letter-spacing:.06em; color:rgba(255,255,255,.55);}
+.hero-strip{border-top:1px solid rgba(255,255,255,.1); overflow:hidden;}
+.hero-strip-window{width:100%; overflow:hidden;}
+.hero-strip-track{display:flex; width:max-content; animation:heroStripCarousel 28s linear infinite;}
+.hero-strip-group{display:flex; align-items:center; gap:42px; flex:0 0 auto; padding:26px 42px 26px 32px;}
+.hero-strip span{font-family:var(--mono); font-size:0.78rem; letter-spacing:.06em; color:rgba(255,255,255,.55); white-space:nowrap;}
 .hero-strip strong{color:var(--white); font-weight:600;}
+@keyframes heroStripCarousel{
+  to{transform:translateX(-50%);}
+}
 
 /* ---------- SECTION SPACING ---------- */
 .section{padding:96px 0;}
@@ -406,14 +411,14 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 /* ---------- HOME PAGE — creative photo-driven redesign ---------- */
 
 /* Hero photo collage */
-.hero-collage{position:relative; display:grid; grid-template-columns:1.15fr 1fr; grid-template-rows:1fr 1fr; gap:14px; height:420px; margin-top:6px;}
+.hero-collage{position:relative; display:grid; grid-template-columns:1.15fr 1fr; grid-template-rows:1fr 1fr; gap:14px; height:444px; margin-top:-18px; padding-bottom:24px;}
 .hc-main{grid-column:1; grid-row:1/3; transform:rotate(-1.4deg);}
 .hc-sub{grid-column:2; grid-row:1; transform:rotate(1.6deg);}
 .hc-sub2{grid-column:2; grid-row:2; transform:rotate(-1deg);}
 .hero-collage .img-ph{height:100%; box-shadow:0 20px 45px -14px rgba(0,0,0,.45);}
 .hero-collage > img{width:100%; height:100%; object-fit:cover; border-radius:var(--radius); box-shadow:0 20px 45px -14px rgba(0,0,0,.45);}
 .hc-badge{
-  position:absolute; left:-14px; bottom:-22px; background:var(--white); color:var(--navy);
+  position:absolute; left:-14px; bottom:-44px; background:var(--white); color:var(--navy);
   border-radius:14px; padding:16px 20px; box-shadow:0 18px 40px -14px rgba(0,0,0,.4);
   font-family:var(--mono); font-size:0.74rem; max-width:220px; z-index:5; line-height:1.5;
 }
@@ -526,7 +531,14 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .story-side{flex-direction:row;}
   .logo-strip{grid-template-columns:repeat(3,1fr);}
   .moments-strip{grid-template-columns:repeat(3,1fr);}
-  .hero-collage{height:340px;}
+  .hero-collage{height:364px; margin-top:-12px;}
+}
+@media (min-width:768px) and (max-width:960px){
+  .hero-inner{gap:42px; padding-bottom:88px;}
+  .hero-collage{height:392px; margin-top:-34px; padding-bottom:34px; z-index:1;}
+  .hc-badge{bottom:-68px;}
+  .hero-strip{position:relative; z-index:8; background:rgba(26,26,46,.96); box-shadow:0 -18px 36px -22px rgba(0,0,0,.75);}
+  .hero-strip span{color:rgba(255,255,255,.74);}
 }
 @media (max-width:700px){
   .section{padding:64px 0;}
@@ -548,7 +560,8 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .team-grid{grid-template-columns:1fr 1fr;}
   .team-page-grid{grid-template-columns:1fr;}
   .footer-top{grid-template-columns:1fr;}
-  .hero-strip .wrap{gap:10px 24px;}
+  .hero-strip-track{animation-duration:22s;}
+  .hero-strip-group{gap:24px; padding:22px 24px 22px 20px;}
   .gallery-grid{grid-template-columns:1fr;}
   .gallery-grid > *:first-child{grid-column:span 1;}
   .masonry-gallery, .mosaic-grid{columns:1;}
@@ -556,9 +569,9 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .obj-item{gap:14px; padding:18px 0;}
   .obj-num{width:32px; height:32px; font-size:0.85rem;}
   .donate-inner, .report-card, .impact-teaser-band{padding:28px 22px;}
-  .report-left{flex-direction:column; align-items:flex-start; gap:14px;}
-  .hero-collage{grid-template-columns:1fr 1fr; height:280px; margin-top:36px;}
-  .hc-badge{left:0; right:0; margin:0 auto; bottom:-30px; max-width:90%; text-align:center;}
+  .report-left{flex-direction:column; align-items:flex-start; gap:14px; max-width: 100%;}
+  .hero-collage{grid-template-columns:1fr 1fr; height:304px; margin-top:14px;}
+  .hc-badge{left:0; right:0; margin:0 auto; bottom:-42px; max-width:100%; text-align:center;}
   .pixel-accent{display:none;}
   .about-overlap-card{margin-top:-40px; margin-left:14px; margin-right:14px; padding:20px;}
   .pillar-photo-grid{grid-template-columns:1fr;}
@@ -566,6 +579,26 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .moments-strip{grid-template-columns:repeat(3,1fr);}
   .cta-photo-band .cta-content{padding:32px 22px;}
   .story-side{flex-direction:column;}
+}
+@media (min-width:408px) and (max-width:610px){
+  .hero-inner{padding-left:20px; padding-right:20px; padding-bottom:92px;}
+  .hero-collage{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+    height:auto;
+    gap:14px;
+    margin-top:14px;
+    padding-bottom:24px;
+  }
+  .hc-main, .hc-sub, .hc-sub2{grid-column:1; grid-row:auto; transform:none;}
+  .hero-collage .img-ph{aspect-ratio:4/3; height:auto;}
+  .hero-collage > img{aspect-ratio:4/3; height:auto;}
+  .hc-badge{left:0; right:0; margin:0 auto; bottom:-42px; max-width:calc(100% - 28px); width:auto; text-align:center;}
+  .pixel-accent{display:none;}
+  .hero-strip{position:relative; z-index:8; background:rgba(26,26,46,.96); box-shadow:0 -16px 32px -22px rgba(0,0,0,.75);}
+  .hero-strip-track{animation-duration:22s;}
+  .hero-strip-group{gap:24px; padding:22px 24px 22px 20px;}
+  .hero-strip span{color:rgba(255,255,255,.76);}
 }
 @media (max-width:420px){
   .fact-chip{flex:1 1 100%;}
@@ -583,4 +616,6 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto;}
   .px{animation:none; opacity:1; transform:none;}
+  .hero-strip-window{overflow-x:auto;}
+  .hero-strip-track{animation:none; transform:none;}
 }
