@@ -2,8 +2,7 @@
 
 Marketing site for TIYE (Technology Initiative for Youth Empowerment), built
 with **Next.js (App Router)** and React. Originally a static HTML/CSS/JS site;
-now converted to Next.js so it can be extended with a CMS (Sanity) and other
-dynamic features. The design and markup are unchanged from the original.
+
 
 ## Getting started
 
@@ -104,3 +103,5 @@ stays consistent.
 Breakpoints are at 960px, 700px, 600px, and 420px (see the bottom of
 `app/globals.css`). All grids, the hero photo collage, and the nav (which
 collapses to a hamburger menu below 960px) work down to small phone widths.
+
+THank you for choosing to use us
