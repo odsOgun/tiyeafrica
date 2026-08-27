@@ -211,26 +211,15 @@ export default function Home() {
             <span className="eyebrow" style={{ color: 'var(--blue)' }}>Voices From The Community</span>
             <h2 style={{ marginTop: '16px' }}>Real people, real change.</h2>
           </div>
-          <div className="stories-grid">
-            <div className="story-feature">
-              <div>
-                <div className="video-thumb" style={{ marginBottom: '26px' }}>
-                  <div className="img-ph on-dark">
-                    <img src="/img/testimony thumbnai.jpg" alt="" />
-                  </div>
-                  <div className="play-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 5l12 7-12 7V5z" fill="#1A1A2E" /></svg>
-                  </div>
-                </div>
-                <blockquote>&quot;[Add a short quote from a graduate about how a TIYE programme changed their path.]&quot;</blockquote>
-              </div>
-              <cite>[Name], [Programme], [Location]</cite>
-            </div>
-            <div className="story-side">
-              <div className="img-ph">
-                <img src="/img/partucpant photo.jpg" alt="" />
-              </div>
-            </div>
+          <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', overflow: 'hidden', borderRadius: '18px', background: '#000' }}>
+            <iframe
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0, display: 'block' }}
+              src="https://www.youtube.com/embed/E5Y0KjFYG2Q?si=gVQgAujSe5ZlmUQA&controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
