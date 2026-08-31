@@ -30,7 +30,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/digital literacy.jpg" alt="DigitalSkill4All training session" />
+            <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
           </div>
         </div>
       </section>

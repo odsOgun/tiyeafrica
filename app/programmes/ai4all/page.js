@@ -33,7 +33,7 @@ export default function AI4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/AIALL.jpg" alt="AI4All classroom session" />
+            <img src="/img/AIFORALL.JPG" alt="AI4All classroom session" />
           </div>
         </div>
       </section>
