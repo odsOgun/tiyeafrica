@@ -13,7 +13,7 @@ export default function Programmes() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="wrap">
-          <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><span>Programmes</span></div>
+          {/* <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><span>Programmes</span></div> */}
           <h1 style={{ maxWidth: '18ch' }}>Three programmes. One digital future.</h1>
           <p className="lede">All our programmes connect to one of our three pillars, digital skills, AI literacy, or responsible AI adoption, turning a mission statement into real training, real events, and real opportunity.</p>
           <div className="fact-bar">
@@ -30,7 +30,7 @@ export default function Programmes() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="/img/digitalskills4LL.png" alt="DigitalSkill4All" />
+                <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -42,7 +42,7 @@ export default function Programmes() {
 
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/AI4ALL.jpg" alt="AI4All" />
+                <img src="/img/A14all.jpg" alt="AI4All" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -60,7 +60,7 @@ export default function Programmes() {
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
                 <h3>Ogun Digital Summit</h3>
                 <p>Our annual technology conference, bringing together students, entrepreneurs, technology leaders, government officials, investors, and policymakers to shape conversations on innovation, AI, and Africa&apos;s digital economy.</p>
-                <a href="https://www.ogundigitalsummit.com/" className="link">View programme details →</a>
+                <a href="https://www.ogundigitalsummit.com/" className="link" target="_blank" rel="noopener noreferrer">View programme details →</a>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "TIYE empowers young people across Africa through digital skills, AI literacy, and responsible AI adoption.",
   icons: {
-    icon: { url: '/img/favicon.svg', type: 'image/svg+xml' },
+    icon: { url: '/img/Tiye icon .png', type: 'image/png' },
   },
 };
 

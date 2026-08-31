@@ -11,15 +11,15 @@ export default function Home() {
           <div>
             <span className="eyebrow hero-eyebrow">Digital Skills · AI Literacy · Responsible AI</span>
             <h1>Digital skills and AI literacy for Africa&apos;s next generation</h1>
-            <p className="lede">TIYE is a nonprofit teaching young people across Africa practical digital skills, artificial intelligence literacy, and responsible use of AI for free</p>
+            <p className="lede">TIYE is a nonprofit empowering young people across Africa with practical digital skills, artificial intelligence literacy, and responsible use of AI for free.<br />Every young person deserves the digital skills and real opportunity to build a future in the industries reshaping the world.</p>
             <div className="hero-actions">
               <Link href="/programmes" className="btn btn-primary">Explore our programmes</Link>
               <a href="#involved" className="btn btn-outline">See How to Get Involved</a>
             </div>
-            <div className="mini-stat-row" style={{ justifyContent: 'center' }}>
-              <div className="mini-stat"><div className="ms-num">8,800+</div><div className="ms-label">Young people reached</div></div>
-              <div className="mini-stat"><div className="ms-num">50+</div><div className="ms-label">Communities served</div></div>
-              <div className="mini-stat"><div className="ms-num">70+</div><div className="ms-label">AI4All sessions delivered</div></div>
+            <div className="mini-stat-row" style={{ JustifyContent: 'center' }}>
+              <div className="mini-stat"><div className="ms-num">5,856+</div><div className="ms-label">Young people reached</div></div>
+              <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
+              <div className="mini-stat"><div className="ms-num">5,000+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
             <span className="eyebrow" style={{ color: 'var(--blue)' }}>About TIYE</span>
             <h2 style={{ margin: '16px 0 24px' }}>Bridging technology and underserved communities.</h2>
             <p>Technology Initiative for Youth Empowerment (TIYE) is a non-profit organisation dedicated to empowering young people across Africa through digital skills, artificial intelligence education, and responsible AI.</p>
-            <p>We believe every young person should have access to the knowledge and opportunities needed to thrive in the digital economy — through education, advocacy, community engagement, and strategic partnerships.</p>
+            <p>We believe every young person should have access to the knowledge and opportunities needed to thrive in the digital economy through education, advocacy, community engagement, and strategic partnerships.</p>
             <Link href="/about" className="btn btn-dark-outline" style={{ marginTop: '8px' }}>Meet the team &amp; our story →</Link>
           </div>
           <div className="about-photo-wrap">
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="/img/digitalskills4LL.png" alt="" />
+                <img src="/img/digital literacy.jpg" alt="" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/AI4ALL.jpg" alt="" />
+                <img src="/img/A14all.jpg" alt="" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
                 <h3>OgunDigitalSummit</h3>
                 <p>Our flagship annual technology conference, bringing together students, entrepreneurs, investors, and policymakers to shape Africa&apos;s digital economy.</p>
-                <Link href="/programmes/ogun-digital-summit" className="link">View programme →</Link>
+                <Link href="https://www.ogundigitalsummit.com/" className="link" target="_blank" rel="noopener noreferrer">View programme →</Link>
               </div>
             </div>
           </div>
@@ -192,15 +192,14 @@ export default function Home() {
           <h2>Thousands of young people. One digital future.</h2>
           <p>Across Africa, our programmes are turning digital skills and AI literacy into real opportunity for young people across . See the numbers, and the stories, behind the work.</p>
           <div className="mini-stat-row" style={{ justifyContent: 'center' }}>
-            <div className="mini-stat"><div className="ms-num">6,000+</div><div className="ms-label">Young people reached</div></div>
-            <div className="mini-stat"><div className="ms-num">50+</div><div className="ms-label">Communities served</div></div>
-            <div className="mini-stat"><div className="ms-num">70+</div><div className="ms-label">Sessions delivered</div></div>
+            <div className="mini-stat"><div className="ms-num">5,856+</div><div className="ms-label">Young people reached</div></div>
+            <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
+            <div className="mini-stat"><div className="ms-num">5,000+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
           </div>
           <div className="hero-actions" style={{ justifyContent: 'center', marginTop: '32px' }}>
-            <Link href="/impact" className="btn btn-primary">See our full impact</Link>
             <Link href="/impact#report" className="btn btn-outline">Download impact report</Link>
           </div>
-          <div className="impact-dots"><span></span><span></span><span></span><span></span><span></span></div>
+          {/* <div className="impact-dots"><span></span><span></span><span></span><span></span><span></span></div> */}
         </div>
       </section>
 
@@ -230,7 +229,6 @@ export default function Home() {
           <div className="section-head" style={{ marginBottom: '32px' }}>
             <span className="eyebrow" style={{ color: 'var(--orange)' }}>Our Partners</span>
             <h2 style={{ marginTop: '16px' }}>Building this together.</h2>
-            <p>Add your partner and funder logos here as they come on board.</p>
           </div>
           <div className="logo-strip">
             <div className="logo-slot"><img src="https://ogunstate.gov.ng/static/media/og%20logo.b96f8a9370d6f1b66f3f224037e9eedd.svg" alt="Ogun state government logo" /></div>
@@ -248,7 +246,7 @@ export default function Home() {
           <div className="section-head">
             <span className="eyebrow" style={{ color: 'var(--orange)' }}>Get Involved</span>
             <h2 style={{ marginTop: '16px' }}>There&apos;s a place for you at TIYE.</h2>
-            <p>Whether you give time, expertise, resources, or an invitation — every contribution moves the mission forward.</p>
+            <p>Whether you give time, expertise, resources, or an invitation, every contribution moves the mission forward.</p>
           </div>
           <div className="involve-grid">
             <div className="involve-card">

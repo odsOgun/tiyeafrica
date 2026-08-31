@@ -13,7 +13,7 @@ export default function About() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="wrap">
-          <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><span>About</span></div>
+          {/* <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><span>About</span></div> */}
           <span className="eyebrow" style={{ color: 'var(--green)' }}>Who We Are</span>
           <h1 style={{ marginTop: '16px', maxWidth: '18ch' }}>Empowering Africa&apos;s digital generation.</h1>
           <p className="lede">TIYE is a nonprofit dedicated to empowering young people across Africa through digital skills, artificial intelligence education, and responsible AI because every young person deserves a real path into the digital economy, regardless of where they are located.</p>
@@ -24,16 +24,16 @@ export default function About() {
       <section className="section-tight" style={{ paddingTop: '56px' }}>
         <div className="wrap" style={{ maxWidth: '720px', marginBottom: '32px' }}>
           <span className="eyebrow" style={{ color: 'var(--green)', paddingBottom: '10px' }}>Our belief</span>
-          <p className="lede">Technology Initiative for Youth EMployability (TIYE) is a non-profit organisation working across Africa to close the digital divide. We bridge the gap between technology and underserved communities by equipping young people with practical skills, while championing the safe, ethical, and responsible use of artificial intelligence. Our work runs through education, advocacy, community engagement, and strategic partnerships.</p>
+          <p className="lede">Technology Initiative for Youth Employability (TIYE) is a non-profit organisation working across Africa to close the digital divide. We bridge the gap between technology and underserved communities by equipping young people with practical skills, while championing the safe, ethical, and responsible use of artificial intelligence. Our work runs through education, advocacy, community engagement, and strategic partnerships.</p>
         </div>
         <div className="wrap">
           <div className="mosaic-grid">
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/programmedelivery.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/learner portrait for about.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/communitysession.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/teamwork.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/learner portrait for about.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/communitysession.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/teamwork.png" alt="" /></div>
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/workshop.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/student group.png" alt="Group photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/student group.png" alt="Group photo" /></div>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function About() {
       </section>
 
       {/* IMPACT TEASER */}
-      <section className="section-tight">
+      {/* <section className="section-tight">
         <div className="wrap">
           <div className="impact-teaser-band">
             <div>
@@ -164,7 +164,7 @@ export default function About() {
             <Link href="/impact" className="btn btn-primary">View our impact →</Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* JOIN THE TEAM */}
       <section className="section-tight bg-white" style={{ borderTop: '1px solid rgba(26,26,46,.08)', borderBottom: '1px solid rgba(26,26,46,.08)' }}>
@@ -178,7 +178,7 @@ export default function About() {
       </section>
 
       {/* DONATE */}
-      <section className="section-tight donate" id="donate-about">
+      {/* <section className="section-tight donate" id="donate-about">
         <div className="wrap donate-inner">
           <div>
             <h2>Your gift builds Africa&apos;s digital future.</h2>
@@ -186,7 +186,7 @@ export default function About() {
           </div>
           <a href="#contact" className="btn btn-primary">Donate now</a>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

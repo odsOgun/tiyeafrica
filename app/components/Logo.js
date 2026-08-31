@@ -1,9 +1,5 @@
 export default function Logo() {
   return (
-    <svg viewBox="0 0 24 24" fill="none">
-      <rect x="9" y="3" width="4.2" height="13" rx="2.1" fill="currentColor" />
-      <circle cx="7.2" cy="18.4" r="3.4" fill="currentColor" />
-      <path d="M13.2 4.5C15.5 3.6 17.8 4 19.4 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-    </svg>
+  <img src="/img/tiye short full logo.png" alt="Logo" width="100" />
   );
 }

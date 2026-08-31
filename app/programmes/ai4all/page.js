@@ -14,7 +14,10 @@ export default function AI4All() {
       <section className="prog-hero-simple">
         <div className="wrap">
           <Link href="/programmes" className="back-link">← Back to programmes</Link>
-          <span className="eyebrow" style={{ color: 'var(--green)' }}>Pillar 02 — AI Literacy</span>
+        {/* <p className="eyebrow" style={{ color: 'var(--green)' }}>Pillar 02 — AI Literacy</p> */}
+          <div>
+            <p className="eyebrow" style={{ color: 'var(--green)' }}>Pillar 02 — AI Literacy</p>
+          </div>
           <h1>AI4All</h1>
           <p className="lede" style={{ color: 'var(--ink-soft)' }}>Making artificial intelligence understandable for every young person — not just how to use it, but how to use it responsibly.</p>
           <div className="fact-bar">
@@ -30,7 +33,7 @@ export default function AI4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/AI4ALL.jpg" alt="AI4All classroom session" />
+            <img src="/img/A14all.jpg" alt="AI4All classroom session" />
           </div>
         </div>
       </section>
@@ -104,17 +107,17 @@ export default function AI4All() {
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/classroomworkshop.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/teachertraining.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/communitysession.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/student group.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/teachertraining.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/communitysession.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/student group.png" alt="" /></div>
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/businessworkshop.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/groupdiscussion.png" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/groupdiscussion.png" alt="" /></div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-tight donate" id="donate-ai4all">
+      {/* <section className="section-tight donate" id="donate-ai4all">
         <div className="wrap donate-inner">
           <div>
             <h2>Bring AI4All to your community.</h2>
@@ -122,7 +125,7 @@ export default function AI4All() {
           </div>
           <a href="#contact" className="btn btn-primary">Request a session</a>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

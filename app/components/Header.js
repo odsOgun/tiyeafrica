@@ -37,15 +37,14 @@ export default function Header() {
     { href: '/about', label: 'About' },
     { href: '/team', label: 'Team' },
     { href: '/programmes', label: 'Programmes' },
-    { href: '/impact', label: 'Impact' },
+    // { href: '/impact', label: 'Impact' },
   ];
 
   return (
     <header>
       <nav className="nav">
         <Link href="/" className="logo">
-          <Logo />
-          TIYE
+          <img src="/img/Tiye short full logo.png" alt="TIYE logo"  width={100}/>
         </Link>
         <ul className="nav-links" style={navStyle}>
           {links.map((l) => (
@@ -55,9 +54,9 @@ export default function Header() {
               </Link>
             </li>
           ))}
-          <li>
+          {/* <li>
             <Link href="/#involved">Get Involved</Link>
-          </li>
+          </li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>

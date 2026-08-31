@@ -43,7 +43,7 @@ export default function Team() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="wrap">
-          <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/about">About</Link><span>/</span><span>Team</span></div>
+          {/* <div className="breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/about">About</Link><span>/</span><span>Team</span></div> */}
           <span className="eyebrow" style={{ color: 'var(--orange)' }}>Our People</span>
           <h1 style={{ marginTop: '16px', maxWidth: '16ch' }}>The people behind TIYE.</h1>
           <p className="lede">We are a small focused focused team working to make sure every young person in Africa has the digital skills, AI literacy, and opportunity to thrive.</p>
@@ -86,7 +86,7 @@ export default function Team() {
       </section>
 
       {/* DONATE */}
-      <section className="section-tight donate" id="donate-team">
+      {/* <section className="section-tight donate" id="donate-team">
         <div className="wrap donate-inner">
           <div>
             <h2>Your gift builds Africa&apos;s digital future.</h2>
@@ -94,7 +94,7 @@ export default function Team() {
           </div>
           <a href="#contact" className="btn btn-primary">Donate now</a>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

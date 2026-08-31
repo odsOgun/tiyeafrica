@@ -9,7 +9,6 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/" className="logo">
               <Logo />
-              TIYE
             </Link>
             <p>Empowering youth through technology digital skills, AI literacy, and responsible AI adoption across Africa.</p>
           </div>

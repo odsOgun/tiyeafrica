@@ -14,7 +14,7 @@ export default function DigitalSkill4All() {
       <section className="prog-hero-simple">
         <div className="wrap">
           <Link href="/programmes" className="back-link">← Back to programmes</Link>
-          <span className="eyebrow" style={{ color: 'var(--blue)' }}>Pillar 01 — Digital Skills Development</span>
+          <div><span className="eyebrow" style={{ color: 'var(--blue)' }}>Pillar 01 — Digital Skills Development</span></div>
           <h1>DigitalSkill4All</h1>
           <p className="lede" style={{ color: 'var(--ink-soft)' }}>Equipping underserved communities with essential digital, technology and career-readiness skills to participate in the digital economy.</p>
           <div className="fact-bar">
@@ -30,7 +30,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/digitalskills4LL.png" alt="DigitalSkill4All training session" />
+            <img src="/img/digital literacy.jpg" alt="DigitalSkill4All training session" />
           </div>
         </div>
       </section>
@@ -104,17 +104,17 @@ export default function DigitalSkill4All() {
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/training.png" alt="Training photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/learner portrait.png" alt="Learner at laptop" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/classroomworkshop.png" alt="Classroom photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/graduate.jpg" alt="Graduation photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/learner portrait.png" alt="Learner at laptop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/classroomworkshop.png" alt="Classroom photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/graduate.jpg" alt="Graduation photo" /></div>
             <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/student group.png" alt="Group photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/mentorship.png" alt="Mentorship photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/mentorship.png" alt="Mentorship photo" /></div>
           </div>
         </div>
       </section>
 
       {/* APPLY CTA */}
-      <section className="section-tight donate" id="donate-dsa">
+      {/* <section className="section-tight donate" id="donate-dsa">
         <div className="wrap donate-inner">
           <div>
             <h2>Ready to build your digital skills?</h2>
@@ -122,7 +122,7 @@ export default function DigitalSkill4All() {
           </div>
           <a href="#contact" className="btn btn-primary">Apply now</a>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>
