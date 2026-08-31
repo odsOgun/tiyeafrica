@@ -5,8 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Logo from './Logo';
 
-// Inline styles that mirror the original js/main.js mobile-menu behaviour, so the
-// existing CSS (which only hides .nav-links under 960px) does not need changing.
+// Inline styles that mirror the original js/main.js mobile-menu behaviour
 const OPEN_MENU_STYLE = {
   display: 'flex',
   position: 'absolute',
@@ -22,7 +21,7 @@ const OPEN_MENU_STYLE = {
 
 export default function Header() {
   const pathname = usePathname();
-  // null = let the stylesheet decide (default responsive behaviour)
+
   const [menuOpen, setMenuOpen] = useState(null);
 
   const isActive = (href) => {
@@ -30,8 +29,17 @@ export default function Header() {
     return pathname === href;
   };
 
+  // Close the mobile menu
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   const navStyle =
-    menuOpen === null ? undefined : menuOpen ? OPEN_MENU_STYLE : { display: 'none' };
+    menuOpen === null
+      ? undefined
+      : menuOpen
+        ? OPEN_MENU_STYLE
+        : { display: 'none' };
 
   const links = [
     { href: '/about', label: 'About' },
@@ -43,31 +51,53 @@ export default function Header() {
   return (
     <header>
       <nav className="nav">
-        <Link href="/" className="logo">
-          <img src="/img/Tiye short full logo.png" alt="TIYE logo"  width={100}/>
+        <Link href="/" className="logo" onClick={closeMenu}>
+          <img
+            src="/img/Tiye short full logo.png"
+            alt="TIYE logo"
+            width={100}
+          />
         </Link>
+
         <ul className="nav-links" style={navStyle}>
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className={isActive(l.href) ? 'active' : undefined}>
+              <Link
+                href={l.href}
+                className={isActive(l.href) ? 'active' : undefined}
+                onClick={closeMenu}
+              >
                 {l.label}
               </Link>
             </li>
           ))}
+
           {/* <li>
-            <Link href="/#involved">Get Involved</Link>
+            <Link href="/#involved" onClick={closeMenu}>
+              Get Involved
+            </Link>
           </li> */}
+
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={closeMenu}>
+              Contact
+            </a>
           </li>
         </ul>
+
         <div className="nav-cta">
-          <Link href="/#donate" className="btn btn-primary">
+          <Link
+            href="/#donate"
+            className="btn btn-primary"
+            onClick={closeMenu}
+          >
             Donate
           </Link>
+
           <button
             className="menu-toggle"
             aria-label="Menu"
+            aria-expanded={menuOpen === true}
             onClick={() => setMenuOpen((v) => !v)}
           >
             <span></span>
