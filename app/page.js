@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/A14all.jpg" alt="" />
+                <img src="/img/AIALL.jpg" alt="" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>

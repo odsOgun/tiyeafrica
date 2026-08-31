@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <Logo />
+              <img src="/img/Tiye short full logo.png" alt="TIYE logo"  width={100}/>
             </Link>
             <p>Empowering youth through technology digital skills, AI literacy, and responsible AI adoption across Africa.</p>
           </div>
