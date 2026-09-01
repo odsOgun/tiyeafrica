@@ -474,7 +474,7 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 .story-side .img-ph{aspect-ratio:16/10; flex:1; min-width:0;}
 
 /* Partner / trust logo strip */
-.logo-strip{display:grid; grid-template-columns:repeat(6,1fr); gap:16px;}
+.logo-strip{display:flex; flex-wrap:wrap; gap:0px;}
 .logo-slot{
   aspect-ratio:2.1/1; border:1.5px dashed rgba(26,26,46,.2); border-radius:12px;
   display:flex; align-items:center; justify-content:center; text-align:center;

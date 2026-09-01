@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from './Logo';
 
 // Inline styles that mirror the original js/main.js mobile-menu behaviour
@@ -23,19 +23,36 @@ export default function Header() {
   const pathname = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateViewport = () => {
+      setIsMobile(window.innerWidth <= 960);
+      if (window.innerWidth > 960) {
+        setMenuOpen(null);
+      }
+    };
+
+    updateViewport();
+    window.addEventListener('resize', updateViewport);
+
+    return () => window.removeEventListener('resize', updateViewport);
+  }, []);
 
   const isActive = (href) => {
     if (href === '/programmes') return pathname.startsWith('/programmes');
     return pathname === href;
   };
 
-  // Close the mobile menu
+  // Close the mobile menu only on small screens
   const closeMenu = () => {
-    setMenuOpen(false);
+    if (isMobile) {
+      setMenuOpen(false);
+    }
   };
 
   const navStyle =
-    menuOpen === null
+    !isMobile || menuOpen === null
       ? undefined
       : menuOpen
         ? OPEN_MENU_STYLE
@@ -98,7 +115,7 @@ export default function Header() {
             className="menu-toggle"
             aria-label="Menu"
             aria-expanded={menuOpen === true}
-            onClick={() => setMenuOpen((v) => !v)}
+            onClick={() => setMenuOpen((v) => (isMobile ? !v : null))}
           >
             <span></span>
             <span></span>

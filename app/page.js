@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-              <img src="/img/tiye community photo.jpg" alt="" />
+              <img src="/img/tiyeCommunityPhoto.jpg" alt="" />
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -224,18 +224,25 @@ export default function Home() {
       </section>
 
       {/* PARTNERS / TRUST STRIP */}
-      <section className="section-tight bg-white" style={{ borderTop: '1px solid rgba(26,26,46,.08)', borderBottom: '1px solid rgba(26,26,46,.08)' }}>
+      <section className="section-tight" style={{ borderTop: '1px solid rgba(26,26,46,.08)', borderBottom: '1px solid rgba(26,26,46,.08)' }}>
         <div className="wrap">
           <div className="section-head" style={{ marginBottom: '32px' }}>
             <span className="eyebrow" style={{ color: 'var(--orange)' }}>Our Partners</span>
             <h2 style={{ marginTop: '16px' }}>Building this together.</h2>
           </div>
-          <div className="logo-strip">
-            <div className="logo-slot"><img src="https://ogunstate.gov.ng/static/media/og%20logo.b96f8a9370d6f1b66f3f224037e9eedd.svg" alt="Ogun state government logo" /></div>
-            <div className="logo-slot"><img src="/img/parner1.svg" alt="ODS logo" /></div>
-            <div className="logo-slot"><img src="/img/Patner3.png" alt="Partner 3 logo" /></div>
-            <div className="logo-slot"><img src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
-            <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
+          <div className="logo-marquee" aria-label="Partner logos carousel">
+            <div className="logo-marquee-track">
+              <div className="logo-slot"><img src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
+              <div className="logo-slot"><img src="/img/parner1.svg" alt="ODS logo" /></div>
+              <div className="logo-slot"><img src="/img/Patner3.png" alt="Partner 3 logo" /></div>
+              <div className="logo-slot"><img src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
+              <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
+              <div className="logo-slot"><img src="/img/Afexcard1.png" alt="AFEX logo" /></div>
+              <div className="logo-slot"><img src="/img/Grazacblue.png" alt="Grazac logo" /></div>
+              <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div>
+              <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div>
+              {/* <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div> */}
+            </div>
           </div>
         </div>
       </section>

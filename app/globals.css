@@ -433,7 +433,7 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 
 /* About: photo with overlapping card */
 .about-photo-wrap{position:relative;}
-.about-photo-wrap .img-ph{width:100%; aspect-ratio:3/4;}
+.about-photo-wrap .img-ph{width:100%;}
 .about-overlap-card{
   position:relative; margin-top:-64px; margin-left:22px; margin-right:22px;
   background:var(--white); border-radius:var(--radius); padding:26px; box-shadow:0 22px 50px -16px rgba(0,0,0,.22);
@@ -478,15 +478,32 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 .story-side .img-ph{aspect-ratio:16/10; flex:1; min-width:0;}
 
 /* Partner / trust logo strip */
-.logo-strip{display:grid; grid-template-columns:repeat(6,1fr); gap:0px;}
-.logo-slot{
-  aspect-ratio:2.1/1; border: 0px;
-  display:flex; align-items:center; justify-content:center; text-align:center;
-  font-family:var(--mono); font-size:.68rem; padding:6px;
+.logo-marquee{
+  position:relative; overflow:hidden; border-radius:20px; border:none; background:transparent; box-shadow:none;
 }
-/* logos are contained, never cropped — and must not outgrow the slot */
-.logo-slot:has(img){border-style:solid; border-color:rgba(26,26,46,.1);}
-.logo-slot img{max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain;}
+.logo-marquee::before,
+.logo-marquee::after{
+  content:''; position:absolute; top:0; bottom:0; width:40px; z-index:2; pointer-events:none;
+}
+.logo-marquee::before{left:0; background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);}
+.logo-marquee::after{right:0; background:linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);}
+.logo-marquee-track{
+  display:flex; align-items:center; width:max-content; gap:12px; padding:12px 0;
+  will-change:transform; animation:logo-marquee 26s linear infinite;
+}
+.logo-slot{
+  flex:0 0 auto; height:110px;
+  display:flex; align-items:center; justify-content:center; text-align:center; padding:14px 16px;
+  border:none; border-radius:16px; background:transparent;
+}
+/* .logo-slot--feature{width:clamp(190px, 24vw, 280px);} */
+.logo-slot img{max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; filter:none; opacity:1;}
+.logo-slot--feature img{max-width:88%; max-height:72%;}
+
+@keyframes logo-marquee{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
 
 /* CTA photo band */
 .cta-photo-band{position:relative; border-radius:24px; overflow:hidden; min-height:280px; display:flex; align-items:center;}
@@ -535,7 +552,9 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .pillar-photo-grid{grid-template-columns:1fr 1fr;}
   .stories-grid{grid-template-columns:1fr;}
   .story-side{flex-direction:row;}
-  .logo-strip{grid-template-columns:repeat(3,1fr);}
+  .logo-marquee-track{gap:0px;}
+  .logo-slot{height:96px;}
+  /* .logo-slot--feature{width:clamp(180px, 36vw, 240px);} */
   .moments-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
   .hero-collage{height:364px; margin-top:-12px;}
 }
@@ -581,7 +600,9 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .pixel-accent{display:none;}
   .about-overlap-card{margin-top:-40px; margin-left:14px; margin-right:14px; padding:20px;}
   .pillar-photo-grid{grid-template-columns:1fr;}
-  .logo-strip{grid-template-columns:repeat(2,1fr);}
+  .logo-marquee-track{gap:10px; padding:10px 0; animation-duration:22s;}
+  .logo-slot{height:84px; padding:12px 14px;}
+  /* .logo-slot--feature{width:clamp(150px, 42vw, 220px);} */
   .moments-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
   .cta-photo-band .cta-content{padding:32px 22px;}
   .story-side{flex-direction:column;}
@@ -611,7 +632,10 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .btn{font-size:0.9rem; padding:12px 20px;}
   .logo{font-size:1.05rem;}
   .moments-strip{grid-template-columns:repeat(2,minmax(0,1fr));}
-  .logo-strip{grid-template-columns:1fr 1fr;}
+  .logo-marquee::before,
+  .logo-marquee::after{width:40px;}
+.logo-slot{height:72px; padding:10px 12px;}
+  /* .logo-slot--feature{width:clamp(140px, 48vw, 180px);} */
   .hero-collage{grid-template-columns:1fr; grid-template-rows:auto; height:auto;}
   .hc-main, .hc-sub, .hc-sub2{grid-column:1; grid-row:auto; transform:none;}
   .hero-collage .img-ph{aspect-ratio:4/3; height:auto;}
@@ -624,4 +648,5 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
   .px{animation:none; opacity:1; transform:none;}
   .hero-strip-window{overflow-x:auto;}
   .hero-strip-track{animation:none; transform:none;}
+  .logo-marquee-track{animation:none; transform:none;}
 }
