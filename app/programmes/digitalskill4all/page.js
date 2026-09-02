@@ -70,7 +70,7 @@ export default function DigitalSkill4All() {
       </section>
 
       {/* TWO PHOTO GRID */}
-      <section className="section-tight">
+      {/* <section className="section-tight">
         <div className="wrap">
           <div className="two-photo-grid">
             <div className="img-ph ratio-3x4">
@@ -81,10 +81,10 @@ export default function DigitalSkill4All() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* SPOTLIGHT: HOW IT'S DELIVERED */}
-      <section className="section">
+      {/* <section className="section">
         <div className="wrap spotlight-grid">
           <div>
             <span className="eyebrow" style={{ color: 'var(--blue)' }}>How It Works</span>
@@ -96,7 +96,7 @@ export default function DigitalSkill4All() {
             <img src="/img/programmedelivery.png" alt="Programme delivery photo" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* GALLERY */}
       <section className="section-tight">

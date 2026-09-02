@@ -73,7 +73,7 @@ export default function AI4All() {
       </section>
 
       {/* TWO PHOTO GRID */}
-      <section className="section-tight">
+      {/* <section className="section-tight">
         <div className="wrap">
           <div className="two-photo-grid">
             <div className="img-ph ratio-3x4">
@@ -84,10 +84,10 @@ export default function AI4All() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* SPOTLIGHT: TRACKS */}
-      <section className="section">
+      {/* <section className="section">
         <div className="wrap spotlight-grid">
           <div>
             <span className="eyebrow" style={{ color: 'var(--green)' }}>Three Tracks</span>
@@ -99,7 +99,7 @@ export default function AI4All() {
             <img src="/img/workshopdelivery.png" alt="AI4All workshop delivery" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* GALLERY */}
       <section className="section-tight">
