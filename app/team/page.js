@@ -55,8 +55,8 @@ export default function Team() {
         <div className="wrap team-group">
           <span className="team-group-label">Leadership</span>
           <div className="team-page-grid">
-            <TeamCard img="/img/teacher.webp" alt="" role="President" name="Victor Adeleye" />
-            <TeamCard img="/img/teacher.webp" alt="Programmes Director" role="Executive Director" roleColor="var(--green)" name="Adebayo Oluwaseun" />
+            <TeamCard img="/img/victor.png" alt="" role="President" name="Victor Adeleye" />
+            <TeamCard img="/img/seunbayo.png" alt="Programmes Director" role="Executive Director" roleColor="var(--green)" name="Adebayo Oluwaseun" />
           </div>
         </div>
       </section>
@@ -66,9 +66,9 @@ export default function Team() {
         <div className="wrap team-group" style={{ marginBottom: 0 }}>
           <span className="team-group-label">Programme &amp; Operations Team</span>
           <div className="team-page-grid">
-            <TeamCard img="/img/teacher.webp" alt="Digital Skills Lead" role="Programs Manager" roleColor="var(--orange)" name="Oluwatosin Iyiola" />
+            <TeamCard img="/img/Tosin's Protrait.png" alt="Digital Skills Lead" role="Programs Manager" roleColor="var(--orange)" name="Oluwatosin Iyiola" />
             <TeamCard img="/img/Joyce.Adeyemi.jpg" alt="AI Literacy Lead" role="Communications Manager" roleColor="var(--blue)" name="Joyce Adeyemi" />
-            <TeamCard img="/img/teacher.webp" alt="Partnerships & Communications" role="Associate Programs Manager" roleColor="var(--green)" name="Halira Temitayo" />
+            <TeamCard img="/img/temitayo.png" alt="Partnerships & Communications" role="Associate Programs Manager" roleColor="var(--green)" name="Halira Temitayo" />
           </div>
       </div>
       </section>

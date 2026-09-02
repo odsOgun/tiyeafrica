@@ -28,12 +28,12 @@ export default function About() {
         </div>
         <div className="wrap">
           <div className="mosaic-grid">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/programmedelivery.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/learner portrait for about.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/communitysession.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/teamwork.png" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/workshop.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/student group.png" alt="Group photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief1.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief2.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief3.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief4.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief5.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief6.jpg" alt="Group photo" /></div>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function About() {
         <div className="wrap">
           <div className="people-teaser">
             <div className="tp-photo img-ph ratio-1x1">
-              <img src="/img/teamwork.png" alt="TIYE team at work" />
+              <img src="/img/ourPeople.jpg" alt="TIYE team at work" />
             </div>
             <div className="people-teaser-text">
               <span className="eyebrow" style={{ color: 'var(--blue)' }}>Our People</span>

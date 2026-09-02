@@ -93,7 +93,7 @@ export default function Home() {
           <div className="pillar-photo-grid">
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/digital skills photo.webp" alt="" />
+                <img src="/img/3ways1.jpg" alt="" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--blue)' }}>01 — Digital Skills</span>
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/AI literacy.jpg" alt="" />
+                <img src="/img/3ways2.jpg" alt="" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--green)' }}>02 — AI Literacy</span>
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/AI SAFETY.jpg" alt="" />
+                <img src="/img/3ways3.jpg" alt="" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/AIFORALL.JPG" alt="AI4All" />
+                <img src="/img/AI4ALLInner.jpg" alt="AI4All" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -310,12 +310,16 @@ export default function Home() {
             <span className="eyebrow" style={{ color: 'var(--green)' }}>Moments</span>
             <h3 style={{ marginTop: '10px' }}>The people, places, and progress behind our work.</h3>
           </div>
-          <div>
-            <div className="img-ph"><img src="/img/peoplePlaces.jpg" alt="" /></div>
+          <div className="moments-strip">
+            <div className="img-ph"><img src="/img/moments1.jpg" alt="" /></div>
+            <div className="img-ph"><img src="/img/moments2.jpg" alt="" /></div>
+            <div className="img-ph"><img src="/img/moments3.jpg" alt="" /></div>
+            <div className="img-ph"><img src="/img/moments4.jpg" alt="" /></div> 
+            <div className="img-ph"><img src="/img/moments5.jpg" alt="" /></div>
+            <div className="img-ph"><img src="/img/moments6.jpg" alt="" /></div>
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );
