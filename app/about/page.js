@@ -56,7 +56,7 @@ export default function About() {
             <p>An Africa where every young person has the knowledge, skills, and opportunities to thrive in a digital world with opportunity within reach of everyone, everywhere, regardless of where they start.</p>
           </div>
           <div className="img-ph ratio-4x3">
-            <img src="/img/mentorship.png" alt="Vision photo" />
+            <img src="/img/ourVision.jpg" alt="Vision photo" />
           </div>
         </div>
       </section>

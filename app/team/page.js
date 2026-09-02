@@ -67,10 +67,10 @@ export default function Team() {
           <span className="team-group-label">Programme &amp; Operations Team</span>
           <div className="team-page-grid">
             <TeamCard img="/img/teacher.webp" alt="Digital Skills Lead" role="Programs Manager" roleColor="var(--orange)" name="Oluwatosin Iyiola" />
-            <TeamCard img="/img/teacher.webp" alt="AI Literacy Lead" role="Communications Manager" roleColor="var(--blue)" name="Joyce Adeyemi" />
+            <TeamCard img="/img/Joyce.Adeyemi.jpg" alt="AI Literacy Lead" role="Communications Manager" roleColor="var(--blue)" name="Joyce Adeyemi" />
             <TeamCard img="/img/teacher.webp" alt="Partnerships & Communications" role="Associate Programs Manager" roleColor="var(--green)" name="Halira Temitayo" />
           </div>
-        </div>
+      </div>
       </section>
 
       {/* JOIN THE TEAM */}

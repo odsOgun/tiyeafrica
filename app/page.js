@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-              <img src="/img/tiyeCommunityPhoto.jpg" alt="" />
+              <img src="/img/Bridging.jpg" alt="" />
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -133,7 +133,7 @@ export default function Home() {
         <div className="wrap">
           <div className="photo-overlay-block">
             <div className="img-ph on-dark">
-              <img src="/img/programmes bg.webp" alt="" />
+              <img src="/img/Real programme.jpg" alt="" />
             </div>
             <div className="overlay-content">
               <span className="eyebrow" style={{ color: 'var(--white)' }}>Our Programmes</span>
@@ -310,13 +310,8 @@ export default function Home() {
             <span className="eyebrow" style={{ color: 'var(--green)' }}>Moments</span>
             <h3 style={{ marginTop: '10px' }}>The people, places, and progress behind our work.</h3>
           </div>
-          <div className="moments-strip">
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
-            <div className="img-ph"><img src="/img/ODS.png" alt="" /></div>
+          <div>
+            <div className="img-ph"><img src="/img/peoplePlaces.jpg" alt="" /></div>
           </div>
         </div>
       </section>
