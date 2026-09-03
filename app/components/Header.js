@@ -96,9 +96,9 @@ export default function Header() {
           </li> */}
 
           <li>
-            <a href="#contact" onClick={closeMenu}>
+            <Link href="/contact" onClick={closeMenu} className={isActive('/contact') ? 'active' : undefined}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
