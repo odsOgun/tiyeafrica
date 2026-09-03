@@ -25,9 +25,9 @@ export default function Home() {
 
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
-              <img className="hc-main" src="/img/3pillars1.jpg" alt="A TIYE learner" />
-              <img className="hc-sub" src="/img/3pillars2.jpg" alt="Students in a TIYE classroom session" />
-              <img className="hc-sub2" src="/img/3pillars3.PNG" alt="A TIYE hands-on workshop" />
+              <img className="hc-main" src="/img/one.jpg" alt="A TIYE learner" />
+              <img className="hc-sub" src="/img/two.jpg" alt="Students in a TIYE classroom session" />
+              <img className="hc-sub2" src="/img/three.PNG" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/3ways3.JPG" alt="Responsible AI community session" />
+                <img src="/img/threeways.JPG" alt="Responsible AI community session" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>
@@ -319,12 +319,12 @@ export default function Home() {
             <h3 style={{ marginTop: '10px' }}>The people, places, and progress behind our work.</h3>
           </div>
           <div className="moments-strip">
-            <div className="img-ph"><img src="/img/moments1.jpg" alt="TIYE community moment" /></div>
-            <div className="img-ph"><img src="/img/moments2.JPG" alt="TIYE learning moment" /></div>
-            <div className="img-ph"><img src="/img/moments3.jpg" alt="TIYE programme moment" /></div>
-            <div className="img-ph"><img src="/img/moments4.JPG" alt="TIYE workshop moment" /></div>
-            <div className="img-ph"><img src="/img/moments5.JPG" alt="TIYE participant moment" /></div>
-            <div className="img-ph"><img src="/img/moments6.JPG" alt="TIYE community gathering" /></div>
+            <div className="img-ph"><img src="/img/momentOne.jpg" alt="TIYE community moment" /></div>
+            <div className="img-ph"><img src="/img/momentsTwo.JPG" alt="TIYE learning moment" /></div>
+            <div className="img-ph"><img src="/img/momentsThree.jpg" alt="TIYE programme moment" /></div>
+            <div className="img-ph"><img src="/img/momentsFour.JPG" alt="TIYE workshop moment" /></div>
+            <div className="img-ph"><img src="/img/momentsFive.JPG" alt="TIYE participant moment" /></div>
+            <div className="img-ph"><img src="/img/momentsSix.JPG" alt="TIYE community gathering" /></div>
           </div>
         </div>
       </section>
