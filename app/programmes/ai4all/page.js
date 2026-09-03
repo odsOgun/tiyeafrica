@@ -106,12 +106,12 @@ export default function AI4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery21.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery22.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery23.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery24.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery25.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery26.jpg" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery21.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery22.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery23.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery24.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery25.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery26.JPG" alt="" /></div>
           </div>
         </div>
       </section>
