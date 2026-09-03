@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -26,7 +25,7 @@ function TeamCard({ img, alt, role, roleColor, name }) {
     <div className="team-page-card">
       <div className="tp-photo">
         <div className="img-ph ratio-4x5">
-          <Image fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 25vw" src={img} alt={alt} />
+          <img src={img} alt={alt} />
         </div>
       </div>
       <div className="tp-body">

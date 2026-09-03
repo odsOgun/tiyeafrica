@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -69,13 +68,7 @@ export default function Header() {
     <header>
       <nav className="nav">
         <Link href="/" className="logo" onClick={closeMenu}>
-          <Image
-            src="/img/Tiye short full logo.png"
-            alt="TIYE logo"
-            width={100}
-            height={35}
-            priority
-          />
+          <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
         </Link>
 
         <ul className="nav-links" style={navStyle}>

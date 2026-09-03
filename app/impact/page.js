@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -95,7 +94,7 @@ export default function Impact() {
           <div className="story-grid">
             <div className="story-card">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/graduate.jpg" alt="TIYE programme graduate" />
+                <img src="/img/graduate.jpg" alt="TIYE programme graduate" />
               </div>
               <div className="story-body">
                 <blockquote>&quot;[Add a short quote about the impact of a TIYE programme on this person&apos;s life.]&quot;</blockquote>
@@ -104,7 +103,7 @@ export default function Impact() {
             </div>
             <div className="story-card">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/teacher.webp" alt="Teacher participating in a TIYE programme" />
+                <img src="/img/teacher.webp" alt="Teacher participating in a TIYE programme" />
               </div>
               <div className="story-body">
                 <blockquote>&quot;[Add a short quote about the impact of a TIYE programme on this person&apos;s life.]&quot;</blockquote>
@@ -113,7 +112,7 @@ export default function Impact() {
             </div>
             <div className="story-card">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/partner.jpg" alt="TIYE partner supporting programme delivery" />
+                <img src="/img/partner.jpg" alt="TIYE partner supporting programme delivery" />
               </div>
               <div className="story-body">
                 <blockquote>&quot;[Add a short quote about the impact of a TIYE programme on this person&apos;s life.]&quot;</blockquote>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -31,7 +30,7 @@ export default function Programmes() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
+                <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -43,7 +42,7 @@ export default function Programmes() {
 
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/ai4allPreview.JPG" alt="AI4All classroom session" />
+                <img src="/img/ai4allPreview.JPG" alt="AI4All classroom session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -55,7 +54,7 @@ export default function Programmes() {
 
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/odsPreview.JPG" alt="Ogun Digital Summit 2025" />
+                <img src="/img/odsPreview.JPG" alt="Ogun Digital Summit 2025" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>

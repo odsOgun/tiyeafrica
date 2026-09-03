@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '../../components/Footer';
 
 export const metadata = {
@@ -31,7 +30,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <Image fill priority sizes="(max-width: 900px) 100vw, 1180px" src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
+            <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
           </div>
         </div>
       </section>
@@ -75,10 +74,10 @@ export default function DigitalSkill4All() {
         <div className="wrap">
           <div className="two-photo-grid">
             <div className="img-ph ratio-3x4">
-              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/learnerwithlaptop.png" alt="Learner at laptop" />
+              <img src="/img/learnerwithlaptop.png" alt="Learner at laptop" />
             </div>
             <div className="img-ph ratio-3x4">
-              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/teacherteaching.png" alt="Facilitator teaching photo" />
+              <img src="/img/teacherteaching.png" alt="Facilitator teaching photo" />
             </div>
           </div>
         </div>
@@ -94,7 +93,7 @@ export default function DigitalSkill4All() {
             <a href="#contact" className="btn btn-blue">Apply for the next cohort →</a>
           </div>
           <div className="img-ph ratio-4x3">
-            <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/programmedelivery.png" alt="Digital skills programme delivery" />
+            <img src="/img/programmedelivery.png" alt="Digital skills programme delivery" />
           </div>
         </div>
       </section> */}
@@ -104,12 +103,12 @@ export default function DigitalSkill4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery11.JPG" alt="Digital skills training session" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery12.JPG" alt="Learner using a laptop" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery13.JPG" alt="Digital skills classroom" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery14.JPG" alt="Digital skills graduation" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery15.JPG" alt="Digital skills learner group" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery16.JPG" alt="Digital skills mentorship session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery11.JPG" alt="Digital skills training session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery12.JPG" alt="Learner using a laptop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery13.JPG" alt="Digital skills classroom" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery14.JPG" alt="Digital skills graduation" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery15.JPG" alt="Digital skills learner group" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery16.JPG" alt="Digital skills mentorship session" /></div>
           </div>
         </div>
       </section>

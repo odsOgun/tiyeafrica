@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Logo from '../../components/Logo';
 
 export const metadata = {
@@ -11,7 +10,7 @@ export const metadata = {
 function Speaker() {
   return (
     <div className="team-card">
-      <div className="img-ph ratio-1x1 round"><Image fill sizes="(max-width: 960px) 50vw, 25vw" src="/img/speaker1.png" alt="Ogun Digital Summit speaker" /></div>
+      <div className="img-ph ratio-1x1 round"><img src="/img/speaker1.png" alt="Ogun Digital Summit speaker" /></div>
       <h4 style={{ marginTop: '12px' }}>[Speaker name]</h4>
       <span className="team-role" style={{ color: 'var(--orange)' }}>[Title, organisation]</span>
     </div>
@@ -41,7 +40,7 @@ export default function OgunDigitalSummit() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <Image fill priority sizes="(max-width: 900px) 100vw, 1180px" src="/img/ods3.png" alt="Ogun Digital Summit stage crowd" />
+            <img src="/img/ods3.png" alt="Ogun Digital Summit stage crowd" />
           </div>
         </div>
       </section>
@@ -85,10 +84,10 @@ export default function OgunDigitalSummit() {
         <div className="wrap">
           <div className="two-photo-grid">
             <div className="img-ph ratio-3x4">
-              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/odsspeaker.png" alt="Ogun Digital Summit keynote stage" />
+              <img src="/img/odsspeaker.png" alt="Ogun Digital Summit keynote stage" />
             </div>
             <div className="img-ph ratio-3x4">
-              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/ods3.png" alt="Ogun Digital Summit audience" />
+              <img src="/img/ods3.png" alt="Ogun Digital Summit audience" />
             </div>
           </div>
         </div>
@@ -104,7 +103,7 @@ export default function OgunDigitalSummit() {
             <a href="#contact" className="btn btn-blue" style={{ background: 'var(--orange)' }}>Register interest →</a>
           </div>
           <div className="img-ph ratio-4x3">
-            <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/speaker1.png" alt="Ogun Digital Summit panel session" />
+            <img src="/img/speaker1.png" alt="Ogun Digital Summit panel session" />
           </div>
         </div>
       </section>
@@ -127,12 +126,12 @@ export default function OgunDigitalSummit() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery — past editions</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit crowd" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit speaker" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit exhibition" /></div>
-            <div className="img-ph" style={{ aspectRatio: '3/4' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit networking" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit panel discussion" /></div>
-            <div className="img-ph" style={{ aspectRatio: '1/1' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ODS.png" alt="Ogun Digital Summit closing session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ODS.png" alt="Ogun Digital Summit crowd" /></div>
+            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/ODS.png" alt="Ogun Digital Summit speaker" /></div>
+            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/ODS.png" alt="Ogun Digital Summit exhibition" /></div>
+            <div className="img-ph" style={{ aspectRatio: '3/4' }}><img src="/img/ODS.png" alt="Ogun Digital Summit networking" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ODS.png" alt="Ogun Digital Summit panel discussion" /></div>
+            <div className="img-ph" style={{ aspectRatio: '1/1' }}><img src="/img/ODS.png" alt="Ogun Digital Summit closing session" /></div>
           </div>
         </div>
       </section>
