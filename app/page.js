@@ -324,11 +324,11 @@ export default function Home() {
           </div>
           <div className="moments-strip">
             <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments1.jpg" alt="TIYE community moment" /></div>
-            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments2.jpg" alt="TIYE learning moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments2.JPG" alt="TIYE learning moment" /></div>
             <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments3.jpg" alt="TIYE programme moment" /></div>
-            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments4.jpg" alt="TIYE workshop moment" /></div>
-            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments5.jpg" alt="TIYE participant moment" /></div>
-            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments6.jpg" alt="TIYE community gathering" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments4.JPG" alt="TIYE workshop moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments5.JPG" alt="TIYE participant moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments6.JPG" alt="TIYE community gathering" /></div>
           </div>
         </div>
       </section>
