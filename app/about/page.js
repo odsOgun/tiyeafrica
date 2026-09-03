@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -28,12 +29,12 @@ export default function About() {
         </div>
         <div className="wrap">
           <div className="mosaic-grid">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief1.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief2.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief3.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief4.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief5.jpg" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief6.jpg" alt="Group photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief1.jpg" alt="TIYE community learning session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief2.jpg" alt="TIYE participants learning together" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief3.jpg" alt="Young people taking part in TIYE activities" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief4.jpg" alt="TIYE digital skills workshop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief5.jpg" alt="TIYE community members collaborating" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/ourbelief6.jpg" alt="TIYE group photo" /></div>
           </div>
         </div>
       </section>
@@ -56,7 +57,7 @@ export default function About() {
             <p>An Africa where every young person has the knowledge, skills, and opportunities to thrive in a digital world with opportunity within reach of everyone, everywhere, regardless of where they start.</p>
           </div>
           <div className="img-ph ratio-4x3">
-            <img src="/img/ourVision.jpg" alt="Vision photo" />
+            <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/ourVision.jpg" alt="Young people learning with technology" />
           </div>
         </div>
       </section>
@@ -140,7 +141,7 @@ export default function About() {
         <div className="wrap">
           <div className="people-teaser">
             <div className="tp-photo img-ph ratio-1x1">
-              <img src="/img/ourPeople.JPG" alt="TIYE team at work" />
+              <Image fill sizes="(max-width: 900px) 100vw, 220px" src="/img/ourPeople.JPG" alt="TIYE team at work" />
             </div>
             <div className="people-teaser-text">
               <span className="eyebrow" style={{ color: 'var(--blue)' }}>Our People</span>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -25,7 +26,7 @@ function TeamCard({ img, alt, role, roleColor, name }) {
     <div className="team-page-card">
       <div className="tp-photo">
         <div className="img-ph ratio-4x5">
-          <img src={img} alt={alt} />
+          <Image fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 25vw" src={img} alt={alt} />
         </div>
       </div>
       <div className="tp-body">
@@ -55,7 +56,7 @@ export default function Team() {
         <div className="wrap team-group">
           <span className="team-group-label">Leadership</span>
           <div className="team-page-grid">
-            <TeamCard img="/img/victor.png" alt="" role="President" name="Victor Adeleye" />
+            <TeamCard img="/img/victor.png" alt="Victor Adeleye, TIYE President" role="President" name="Victor Adeleye" />
             <TeamCard img="/img/seunbayo.png" alt="Programmes Director" role="Executive Director" roleColor="var(--green)" name="Adebayo Oluwaseun" />
           </div>
         </div>

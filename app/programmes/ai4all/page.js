@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '../../components/Footer';
 
 export const metadata = {
@@ -33,7 +34,7 @@ export default function AI4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/AIFORALL.JPG" alt="AI4All classroom session" />
+            <Image fill priority sizes="(max-width: 900px) 100vw, 1180px" src="/img/AIFORALL.JPG" alt="AI4All classroom session" />
           </div>
         </div>
       </section>
@@ -77,10 +78,10 @@ export default function AI4All() {
         <div className="wrap">
           <div className="two-photo-grid">
             <div className="img-ph ratio-3x4">
-              <img src="/img/student group.png" alt="AI4All student group" />
+              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/student group.png" alt="AI4All student group" />
             </div>
             <div className="img-ph ratio-3x4">
-              <img src="/img/teacherteaching.png" alt="AI4All facilitator teaching" />
+              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/teacherteaching.png" alt="AI4All facilitator teaching" />
             </div>
           </div>
         </div>
@@ -96,7 +97,7 @@ export default function AI4All() {
             <a href="#contact" className="btn btn-blue" style={{ background: 'var(--green)' }}>Bring AI4All to your school →</a>
           </div>
           <div className="img-ph ratio-4x3">
-            <img src="/img/workshopdelivery.png" alt="AI4All workshop delivery" />
+            <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/workshopdelivery.png" alt="AI4All workshop delivery" />
           </div>
         </div>
       </section> */}
@@ -106,12 +107,12 @@ export default function AI4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery21.JPG" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery22.JPG" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery23.JPG" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery24.JPG" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery25.JPG" alt="" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery26.JPG" alt="" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery21.JPG" alt="AI4All training activity" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery22.JPG" alt="AI4All participants in discussion" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery23.JPG" alt="AI4All workshop participants" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery24.JPG" alt="AI4All classroom activity" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery25.JPG" alt="AI4All learning session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><Image fill sizes="(max-width: 640px) 100vw, 50vw" src="/img/gallery26.JPG" alt="AI4All community workshop" /></div>
           </div>
         </div>
       </section>

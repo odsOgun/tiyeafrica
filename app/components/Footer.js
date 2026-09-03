@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from './Logo';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <img src="/img/Tiye short full logo.png" alt="TIYE logo"  width={100}/>
+              <Image src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
             </Link>
             <p>Empowering youth through technology digital skills, AI literacy, and responsible AI adoption across Africa.</p>
           </div>

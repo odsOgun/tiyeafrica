@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from './components/Footer';
 import PixelGrid from './components/PixelGrid';
 
@@ -25,9 +26,9 @@ export default function Home() {
 
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
-            <img className="hc-main" src="/img/3pillars3.png" alt="A TIYE learner" />
-            <img className="hc-sub" src="/img/3pillars1.jpg" alt="Students in a TIYE classroom session" />
-            <img className="hc-sub2" src="/img/3pillars2.jpg" alt="A TIYE hands-on workshop" />
+            <Image className="hc-main" width={700} height={520} priority sizes="(max-width: 960px) 50vw, 40vw" src="/img/3pillars3.png" alt="A TIYE learner" />
+            <Image className="hc-sub" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars1.jpg" alt="Students in a TIYE classroom session" />
+            <Image className="hc-sub2" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars2.jpg" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
@@ -61,7 +62,7 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-              <img src="/img/Bridging.jpg" alt="" />
+              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/Bridging.jpg" alt="TIYE connecting young people with technology" />
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -93,7 +94,7 @@ export default function Home() {
           <div className="pillar-photo-grid">
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/3ways1.jpg" alt="" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways1.jpg" alt="Digital skills training in a TIYE community" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--blue)' }}>01 — Digital Skills</span>
@@ -104,7 +105,7 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/3ways2.jpg" alt="" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways2.jpg" alt="AI literacy learning session" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--green)' }}>02 — AI Literacy</span>
@@ -115,7 +116,7 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <img src="/img/3ways3.jpg" alt="" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways3.jpg" alt="Responsible AI community session" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>
@@ -133,7 +134,7 @@ export default function Home() {
         <div className="wrap">
           <div className="photo-overlay-block">
             <div className="img-ph on-dark">
-              <img src="/img/Real programme.jpg" alt="" />
+              <Image fill sizes="100vw" src="/img/Real programme.jpg" alt="TIYE programme participants" />
             </div>
             <div className="overlay-content">
               <span className="eyebrow" style={{ color: 'var(--white)' }}>Our Programmes</span>
@@ -150,7 +151,7 @@ export default function Home() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -161,7 +162,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/ai4allPreview.JPG" alt="AI4All" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/ai4allPreview.JPG" alt="AI4All classroom session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -172,7 +173,7 @@ export default function Home() {
             </div>
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <img src="/img/odsPreview.JPG" alt="" />
+                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/odsPreview.JPG" alt="Ogun Digital Summit event" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
@@ -232,22 +233,22 @@ export default function Home() {
           </div>
           <div className="logo-marquee" aria-label="Partner logos carousel">
             <div className="logo-marquee-track">
-              <div className="logo-slot"><img src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
-              <div className="logo-slot"><img src="/img/parner1.svg" alt="ODS logo" /></div>
-              <div className="logo-slot"><img src="/img/Patner3.png" alt="Partner 3 logo" /></div>
-              <div className="logo-slot"><img src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
-              <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
-              <div className="logo-slot"><img src="/img/Afexcard1.png" alt="AFEX logo" /></div>
-              <div className="logo-slot"><img src="/img/Grazacblue.png" alt="Grazac logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/parner1.svg" alt="ODS logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Patner3.png" alt="Partner 3 logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
+              <div className="logo-slot"><Image width={181} height={101} sizes="181px" src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Afexcard1.png" alt="AFEX logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Grazacblue.png" alt="Grazac logo" /></div>
               {/* <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div> */}
               {/* <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div> */}
-              <div className="logo-slot"><img src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
-              <div className="logo-slot"><img src="/img/parner1.svg" alt="ODS logo" /></div>
-              <div className="logo-slot"><img src="/img/Patner3.png" alt="Partner 3 logo" /></div>
-              <div className="logo-slot"><img src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
-              <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
-              <div className="logo-slot"><img src="/img/Afexcard1.png" alt="AFEX logo" /></div>
-              <div className="logo-slot"><img src="/img/Grazacblue.png" alt="Grazac logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/parner1.svg" alt="ODS logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Patner3.png" alt="Partner 3 logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
+              <div className="logo-slot"><Image width={181} height={101} sizes="181px" src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Afexcard1.png" alt="AFEX logo" /></div>
+              <div className="logo-slot"><Image width={180} height={100} sizes="180px" src="/img/Grazacblue.png" alt="Grazac logo" /></div>
               {/* <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div> */}
               {/* <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div> */}
             </div>
@@ -319,12 +320,12 @@ export default function Home() {
             <h3 style={{ marginTop: '10px' }}>The people, places, and progress behind our work.</h3>
           </div>
           <div className="moments-strip">
-            <div className="img-ph"><img src="/img/moments1.jpg" alt="" /></div>
-            <div className="img-ph"><img src="/img/moments2.jpg" alt="" /></div>
-            <div className="img-ph"><img src="/img/moments3.jpg" alt="" /></div>
-            <div className="img-ph"><img src="/img/moments4.jpg" alt="" /></div> 
-            <div className="img-ph"><img src="/img/moments5.jpg" alt="" /></div>
-            <div className="img-ph"><img src="/img/moments6.jpg" alt="" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments1.jpg" alt="TIYE community moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments2.jpg" alt="TIYE learning moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments3.jpg" alt="TIYE programme moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments4.jpg" alt="TIYE workshop moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments5.jpg" alt="TIYE participant moment" /></div>
+            <div className="img-ph"><Image fill sizes="(max-width: 640px) 50vw, 17vw" src="/img/moments6.jpg" alt="TIYE community gathering" /></div>
           </div>
         </div>
       </section>
