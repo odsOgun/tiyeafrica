@@ -16,7 +16,7 @@ export default function Home() {
             <div className="hero-actions">
               <Link href="/programmes" className="btn btn-primary">Explore our programmes</Link>
               <a href="#involved" className="btn btn-outline">See How to Get Involved</a>
-            </div>
+          </div>
             <div className="mini-stat-row" style={{ JustifyContent: 'center' }}>
               <div className="mini-stat"><div className="ms-num">5,856+</div><div className="ms-label">Young people reached</div></div>
               <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
@@ -27,8 +27,8 @@ export default function Home() {
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
             <Image className="hc-main" width={700} height={520} priority sizes="(max-width: 960px) 50vw, 40vw" src="/img/3pillars1.jpg" alt="A TIYE learner" />
-            <Image className="hc-sub" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars2.jpg" alt="Students in a TIYE classroom session" />
-            <Image className="hc-sub2" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars3.png" alt="A TIYE hands-on workshop" />
+        <Image className="hc-sub" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars2.jpg" alt="Students in a TIYE classroom session" />
+          <Image className="hc-sub2" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars3.PNG" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
@@ -62,7 +62,8 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-              <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/Bridging.jpg" alt="TIYE connecting young people with technology" />
+            {/* <Image src="/img/Bridging.jpg" alt="TIYE connecting young people with technology" width={100} height={100}/> */}
+            <img src="/img/Bridging.jpg" alt="TIYE connecting young people with technology"/>
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -117,6 +118,7 @@ export default function Home() {
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
                 <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways3.JPG" alt="Responsible AI community session" />
+                {/* <img src="/img/3ways3.JPG" alt="Responsible AI community session" /> */}
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>

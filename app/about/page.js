@@ -57,7 +57,8 @@ export default function About() {
             <p>An Africa where every young person has the knowledge, skills, and opportunities to thrive in a digital world with opportunity within reach of everyone, everywhere, regardless of where they start.</p>
           </div>
           <div className="img-ph ratio-4x3">
-            <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/ourVision.JPG" alt="Young people learning with technology" />
+            {/* <Image fill sizes="(max-width: 900px) 100vw, 50vw" src="/img/ourVision.JPG" alt="Young people learning with technology" /> */}
+            <img src="/img/ourVision.JPG" alt="Young people learning with technology" />
           </div>
         </div>
       </section>
