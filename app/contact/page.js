@@ -14,37 +14,6 @@ const reasons = [
   'Other',
 ];
 
-const involvement = [
-  {
-    title: 'Volunteer',
-    description: 'Join our community of volunteers and help deliver impactful programmes across Africa.',
-    cta: 'Volunteer with us →',
-    reason: 'Volunteer',
-    color: 'blue',
-  },
-  {
-    title: 'Partner With Us',
-    description: 'Collaborate with us to expand digital skills and responsible AI education.',
-    cta: 'Start a partnership →',
-    reason: 'Partnership',
-    color: 'green',
-  },
-  {
-    title: 'Sponsor Our Programmes',
-    description: 'Support initiatives that create opportunities for underserved communities and prepare young people for the future.',
-    cta: 'Become a sponsor →',
-    reason: 'Sponsorship',
-    color: 'orange',
-  },
-  {
-    title: 'Invite Us',
-    description: 'Invite us to deliver AI literacy, digital skills training, or a keynote at your school or organisation.',
-    cta: 'Send an invite →',
-    reason: 'Invite us to an event',
-    color: 'navy',
-  },
-];
-
 export default function ContactPage() {
   const formRef = useRef(null);
   const [reason, setReason] = useState('');
@@ -67,6 +36,18 @@ export default function ContactPage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const message = formData.get('message');
+    const phone = formData.get('phone');
+    const phoneIsValid = !phone || (/^\+?[0-9 ()-]+$/.test(phone) && (phone.match(/\d/g)?.length ?? 0) >= 7);
+    form.elements.phone.setCustomValidity(phoneIsValid ? '' : 'Enter a phone number with at least 7 digits.');
+
+    if (!form.checkValidity() || !reasons.includes(formData.get('reason')) || !message?.trim() || !phoneIsValid) {
+      form.reportValidity();
+      return;
+    }
+
     setStatus('submitting');
     await new Promise((resolve) => setTimeout(resolve, 500));
     setStatus('ready');
@@ -111,8 +92,10 @@ export default function ContactPage() {
                   <span><small>Location</small><strong>Africa</strong></span>
                 </div>
                 <div className="contact-info">
-                  <span className="contact-info-icon" aria-hidden="true">↗</span>
-                  <span><small>Phone</small><strong>Phone number to be confirmed</strong></span>
+                  <a href="tel:+2348068365951" className="contact-info">
+                    <span className="contact-info-icon" aria-hidden="true">↗</span>
+                    <span><small>Phone</small><strong>+2348068365951</strong></span>
+                  </a>
                 </div>
               </div>
               <p className="contact-reassurance">We&apos;re always open to conversations that create meaningful opportunities for young people.</p>
@@ -121,15 +104,15 @@ export default function ContactPage() {
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-heading"><span className="eyebrow" style={{ color: 'var(--orange)' }}>Send a message</span><p>Tell us a little about how we can work together.</p></div>
               <div className="form-row">
-                <label>Full Name<input name="name" type="text" autoComplete="name" required placeholder="Your name" /></label>
-                <label>Email Address<input name="email" type="email" autoComplete="email" required placeholder="you@example.com" /></label>
+                <label>Full Name<input name="name" type="text" autoComplete="name" required minLength="2" maxLength="100" pattern="[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ .'-]{1,99}" title="Enter a name using letters, spaces, apostrophes, periods, or hyphens." placeholder="Your name" /></label>
+                <label>Email Address<input name="email" type="email" autoComplete="email" required maxLength="254" placeholder="you@example.com" /></label>
               </div>
               <div className="form-row">
-                <label>Organisation <span>(optional)</span><input name="organisation" type="text" autoComplete="organization" placeholder="Your organisation" /></label>
-                <label>Phone Number <span>(optional)</span><input name="phone" type="tel" autoComplete="tel" placeholder="+234..." /></label>
+                <label>Organisation <input name="organisation" type="text" autoComplete="organization" maxLength="100" pattern="[A-Za-z0-9À-ÖØ-öø-ÿ][A-Za-z0-9À-ÖØ-öø-ÿ &.,'()/-]{1,99}" title="Use letters, numbers, spaces, and common punctuation only." placeholder="Your organisation" /></label>
+                <label>Phone Number <input name="phone" type="tel" autoComplete="tel" maxLength="20" pattern="\+?[0-9 ()-]{7,20}" title="Enter a valid phone number using digits, spaces, parentheses, hyphens, and an optional plus sign." placeholder="+234..." /></label>
               </div>
               <label>Reason for contacting us<select name="reason" value={reason} onChange={(event) => setReason(event.target.value)} required><option value="" disabled>Select a reason</option>{reasons.map((option) => <option key={option}>{option}</option>)}</select></label>
-              <label>Message<textarea name="message" required minLength="10" rows="6" placeholder="How can we help?"></textarea></label>
+              <label>Message<textarea name="message" required minLength="10" maxLength="2000" rows="6" placeholder="How can we help?"></textarea></label>
               <button type="submit" className="btn btn-primary form-submit" disabled={status === 'submitting'}>{status === 'submitting' ? 'Preparing message…' : 'Send Message →'}</button>
               {status === 'ready' && <p className="form-status" role="status">Your message is ready to connect to TIYE&apos;s enquiry service. Please connect a backend endpoint to complete delivery.</p>}
             </form>

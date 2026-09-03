@@ -34,6 +34,7 @@ export default function Footer() {
               <li><a href="mailto:hello@tiyeafrica.org">hello@tiyeafrica.org</a></li>
               <li><a href="https://x.com/tiyeafrica">Twitter</a></li>
               <li><a href="https://www.instagram.com/tiyeafrica">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/tiyeafrica/">LinkedIn</a></li>
             </ul>
           </div>
         </div>

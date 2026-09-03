@@ -140,7 +140,7 @@ export default function About() {
         <div className="wrap">
           <div className="people-teaser">
             <div className="tp-photo img-ph ratio-1x1">
-              <img src="/img/ourPeople.jpg" alt="TIYE team at work" />
+              <img src="/img/ourPeople.JPG" alt="TIYE team at work" />
             </div>
             <div className="people-teaser-text">
               <span className="eyebrow" style={{ color: 'var(--blue)' }}>Our People</span>

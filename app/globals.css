@@ -527,8 +527,8 @@ footer{background:var(--navy); color:rgba(255,255,255,.6); padding-top:80px;}
 .logo-marquee::after{
   content:''; position:absolute; top:0; bottom:0; width:40px; z-index:2; pointer-events:none;
 }
-.logo-marquee::before{left:0; background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);}
-.logo-marquee::after{right:0; background:linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);}
+/* .logo-marquee::before{left:0; background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);} */
+/* .logo-marquee::after{right:0; background:linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);} */
 .logo-marquee-track{
   display:flex; align-items:center; width:max-content; gap:12px; padding:12px 0;
   will-change:transform; animation:logo-marquee 26s linear infinite;

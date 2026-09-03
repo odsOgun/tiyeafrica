@@ -103,12 +103,12 @@ export default function DigitalSkill4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/training.png" alt="Training photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/learner portrait.png" alt="Learner at laptop" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/classroomworkshop.png" alt="Classroom photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/graduate.jpg" alt="Graduation photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/student group.png" alt="Group photo" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/mentorship.png" alt="Mentorship photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery11.jpg" alt="Training photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery12.jpg" alt="Learner at laptop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery13.jpg" alt="Classroom photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery14.jpg" alt="Graduation photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery15.jpg" alt="Group photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery16.jpg " alt="Mentorship photo" /></div>
           </div>
         </div>
       </section>

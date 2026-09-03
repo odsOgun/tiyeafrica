@@ -25,13 +25,13 @@ export default function Home() {
 
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
-            <img className="hc-main" src="/img/learner portrait.png" alt="A TIYE learner" />
-            <img className="hc-sub" src="/img/classroom.jpg" alt="Students in a TIYE classroom session" />
-            <img className="hc-sub2" src="/img/workshop.jpg" alt="A TIYE hands-on workshop" />
+            <img className="hc-main" src="/img/3pillars3.png" alt="A TIYE learner" />
+            <img className="hc-sub" src="/img/3pillars1.jpg" alt="Students in a TIYE classroom session" />
+            <img className="hc-sub2" src="/img/3pillars2.jpg" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
-        <div className="hero-strip" aria-label="TIYE focus areas">
+      <div className="hero-strip" aria-label="TIYE focus areas">
           <div className="hero-strip-window">
             <div className="hero-strip-track">
               <div className="hero-strip-group">
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/AI4ALLInner.jpg" alt="AI4All" />
+                <img src="/img/ai4allPreview.jpg" alt="AI4All" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -172,7 +172,7 @@ export default function Home() {
             </div>
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <img src="/img/ODS.png" alt="" />
+                <img src="/img/odsPreview.JPG" alt="" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
@@ -239,9 +239,17 @@ export default function Home() {
               <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
               <div className="logo-slot"><img src="/img/Afexcard1.png" alt="AFEX logo" /></div>
               <div className="logo-slot"><img src="/img/Grazacblue.png" alt="Grazac logo" /></div>
-              <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div>
-              <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div>
-              {/* <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div> */}
+              {/* <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div> */}
+              {/* <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div> */}
+              <div className="logo-slot"><img src="/img/ogunGov.svg" alt="Ogun state government logo" /></div>
+              <div className="logo-slot"><img src="/img/parner1.svg" alt="ODS logo" /></div>
+              <div className="logo-slot"><img src="/img/Patner3.png" alt="Partner 3 logo" /></div>
+              <div className="logo-slot"><img src="/img/patner4.png" alt="Ogun state bureau of ict logo" /></div>
+              <div className="logo-slot"><img src="https://3mtt.nitda.gov.ng/wp-content/uploads/2023/10/Group-5-181x101.png" alt="3MTT logo" /></div>
+              <div className="logo-slot"><img src="/img/Afexcard1.png" alt="AFEX logo" /></div>
+              <div className="logo-slot"><img src="/img/Grazacblue.png" alt="Grazac logo" /></div>
+              {/* <div className="logo-slot"><img src="/img/smallogundaily.png" alt="Small Ogun Daily logo" /></div> */}
+              {/* <div className="logo-slot"><img src="/img/smalltech.png" alt="small tech logo" /></div> */}
             </div>
           </div>
         </div>
@@ -260,25 +268,25 @@ export default function Home() {
               <div className="dot"></div>
               <h4>Volunteer</h4>
               <p>Join our community of volunteers and help deliver impactful programmes across Africa.</p>
-              <a href="#contact" className="link">Volunteer with us →</a>
+              <a href="/contact" className="link">Volunteer with us →</a>
             </div>
             <div className="involve-card">
               <div className="dot"></div>
               <h4>Partner With Us</h4>
               <p>Collaborate with us to expand digital skills and responsible AI education.</p>
-              <a href="#contact" className="link">Start a partnership →</a>
+              <a href="/contact" className="link">Start a partnership →</a>
             </div>
             <div className="involve-card">
               <div className="dot"></div>
               <h4>Sponsor Our Programmes</h4>
               <p>Support initiatives that create opportunities for underserved communities and prepare young people for the future.</p>
-              <a href="#contact" className="link">Become a sponsor →</a>
+              <a href="/contact" className="link">Become a sponsor →</a>
             </div>
             <div className="involve-card">
               <div className="dot"></div>
               <h4>Invite Us</h4>
               <p>Invite TIYE to deliver AI literacy, digital skills training, or a keynote at your school or organisation.</p>
-              <a href="#contact" className="link">Send an invite →</a>
+              <a href="/contact" className="link">Send an invite →</a>
             </div>
           </div>
         </div>
