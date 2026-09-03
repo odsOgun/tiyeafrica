@@ -27,8 +27,9 @@ export default function Home() {
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
             <Image className="hc-main" width={700} height={520} priority sizes="(max-width: 960px) 50vw, 40vw" src="/img/3pillars1.jpg" alt="A TIYE learner" />
-        <Image className="hc-sub" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars2.jpg" alt="Students in a TIYE classroom session" />
+            <Image className="hc-sub" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars2.jpg" alt="Students in a TIYE classroom session" />
           <Image className="hc-sub2" width={500} height={380} priority sizes="(max-width: 960px) 50vw, 30vw" src="/img/3pillars3.PNG" alt="A TIYE hands-on workshop" />
+            {/* <img src="/img/3pillars3.PNG" alt="A TIYE hands-on workshop" /> */}
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
@@ -117,8 +118,8 @@ export default function Home() {
             </div>
             <div className="pillar-photo-card">
               <div className="img-ph pp-photo">
-                <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways3.JPG" alt="Responsible AI community session" />
-                {/* <img src="/img/3ways3.JPG" alt="Responsible AI community session" /> */}
+                {/* <Image fill sizes="(max-width: 900px) 100vw, 33vw" src="/img/3ways3.JPG" alt="Responsible AI community session" /> */}
+                <img src="/img/3ways3.JPG" alt="Responsible AI community session" />
               </div>
               <div className="pp-body">
                 <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>
