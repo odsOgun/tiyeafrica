@@ -40,8 +40,12 @@ export default function Header() {
 
   const isActive = (href) => {
     if (href === '/programmes') return pathname.startsWith('/programmes');
+    if (href === '/news') return pathname.startsWith('/news');
     return pathname === href;
   };
+
+  // The embedded Sanity Studio is a full-screen app; don't overlay the site nav.
+  if (pathname.startsWith('/studio')) return null;
 
   // Close the mobile menu only on small screens
   const closeMenu = () => {
@@ -61,6 +65,7 @@ export default function Header() {
     { href: '/about', label: 'About' },
     { href: '/team', label: 'Team' },
     { href: '/programmes', label: 'Programmes' },
+    { href: '/news', label: 'News' },
     // { href: '/impact', label: 'Impact' },
   ];
 
