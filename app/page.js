@@ -10,16 +10,16 @@ export default function Home() {
         <div className="hero-inner">
           <div>
             <span className="eyebrow hero-eyebrow">Digital Skills · AI Literacy · Responsible AI</span>
-            <h1>Digital skills and AI literacy for Africa&apos;s next generation</h1>
-            <p className="lede">TIYE is a nonprofit empowering young people across Africa with practical digital skills, artificial intelligence literacy, and responsible use of AI for free.<br />Every young person deserves the digital skills and real opportunity to build a future in the industries reshaping the world.</p>
+            <h1>Building pathways into Africa's digital economy</h1>
+            <p className="lede">Every young person deserves the digital skills and real opportunity to build a future in the industries reshaping the world.</p>
             <div className="hero-actions">
-              <Link href="/programmes" className="btn btn-primary">Explore our programmes</Link>
-              <a href="#involved" className="btn btn-outline">See How to Get Involved</a>
+              <Link href="/programmes" className="btn btn-primary">Explore Our Programmes</Link>
+              <a href="#involved" className="btn btn-outline">Get Involved</a>
           </div>
             <div className="mini-stat-row" style={{ JustifyContent: 'center' }}>
-              <div className="mini-stat"><div className="ms-num">5,856+</div><div className="ms-label">Young people reached</div></div>
+              <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>
               <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
-              <div className="mini-stat"><div className="ms-num">5,000+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
+              <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ export default function Home() {
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
-      <div className="hero-strip" aria-label="TIYE focus areas">
+      {/* <div className="hero-strip" aria-label="TIYE focus areas">
           <div className="hero-strip-window">
             <div className="hero-strip-track">
               <div className="hero-strip-group">
@@ -45,8 +45,8 @@ export default function Home() {
                 <span><strong>Responsible AI</strong> — safety, ethics, governance</span>
               </div>
             </div>
-          </div>
         </div>
+        </div> */}
       </section>
 
       {/* ABOUT TEASER */}
@@ -54,9 +54,9 @@ export default function Home() {
         <div className="wrap about-grid">
           <div>
             <span className="eyebrow" style={{ color: 'var(--blue)' }}>About TIYE</span>
-            <h2 style={{ margin: '16px 0 24px' }}>Bridging technology and underserved communities.</h2>
-            <p>Technology Initiative for Youth Empowerment (TIYE) is a non-profit organisation dedicated to empowering young people across Africa through digital skills, artificial intelligence education, and responsible AI.</p>
-            <p>We believe every young person should have access to the knowledge and opportunities needed to thrive in the digital economy through education, advocacy, community engagement, and strategic partnerships.</p>
+          <h2 style={{ margin: '16px 0 24px' }}>Bridging technology and underserved communities.</h2>
+            <p>TIYE is a nonprofit organization dedicated to empowering young and underserved populations with technology and digital creative knowledge and skills, adoption and responsible use of AI, and connecting them to work and opportunities in the digital economy.</p>
+            <p>We believe every young person should have access to the knowledge and opportunities needed to thrive in the digital economy, and as artificial intelligence continues to transform industries, we ensure that underserved communities are not left behind through education. Advocacy, community engagement, strategic partnership.</p>
             <Link href="/about" className="btn btn-dark-outline" style={{ marginTop: '8px' }}>Meet the team &amp; our story →</Link>
           </div>
           <div className="about-photo-wrap">
@@ -84,44 +84,32 @@ export default function Home() {
       <section className="section bg-navy" id="pillars">
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow" style={{ color: 'var(--green)' }}>What We Do</span>
-            <h2 style={{ marginTop: '16px' }}>Three ways we&apos;re building Africa&apos;s digital future.</h2>
-            <p>Technology is changing every industry, but access to it isn&apos;t equal. TIYE closes that gap through three connected pillars: practical digital skills, AI literacy, and responsible AI adoption.
-              <br />Together, we give young people the tools to participate in the digital economy and the judgment to use technology safely and ethically.
-            </p>
+            <span className="eyebrow" style={{ color: 'var(--green)' }}>Moments that matter</span>
+            <h2 style={{ marginTop: '16px' }}>Events that capture the people, places, and progress behind our work.</h2>
           </div>
-          <div className="pillar-photo-grid">
-            <div className="pillar-photo-card">
-              <div className="img-ph pp-photo">
+          <div className="pillar-photo-gallery" aria-label="TIYE community moments">
+            <div className="pillar-photo-track">
+              <div className="pillar-photo-group">
                 <img src="/img/3ways1.jpg" alt="Digital skills training in a TIYE community" />
-              </div>
-              <div className="pp-body">
-                <span className="pp-tag" style={{ background: 'var(--blue)' }}>01 — Digital Skills</span>
-                <h3>Practical skills for the digital economy</h3>
-                <p>We equip young Africans with practical technology and digital skills that prepare them for employment, entrepreneurship, and lifelong success.</p>
-                <Link href="/programmes/digitalskill4all" className="link">See DigitalSkill4All →</Link>
-              </div>
-            </div>
-            <div className="pillar-photo-card">
-              <div className="img-ph pp-photo">
                 <img src="/img/3ways2.jpg" alt="AI literacy learning session" />
-              </div>
-              <div className="pp-body">
-                <span className="pp-tag" style={{ background: 'var(--green)' }}>02 — AI Literacy</span>
-                <h3>Making AI understandable for everyone</h3>
-                <p>We simplify AI and make it accessible through education, awareness programmes, workshops, and school outreach.</p>
-                <Link href="/programmes/ai4all" className="link">See AI4All →</Link>
-              </div>
-            </div>
-            <div className="pillar-photo-card">
-              <div className="img-ph pp-photo">
                 <img src="/img/threeways.JPG" alt="Responsible AI community session" />
+                <img src="/img/momentOne.jpg" alt="TIYE community moment" />
+                <img src="/img/momentsTwo.JPG" alt="TIYE learning moment" />
+                <img src="/img/momentsThree.jpg" alt="TIYE programme moment" />
+                <img src="/img/momentsFour.JPG" alt="TIYE workshop moment" />
+                <img src="/img/momentsFive.JPG" alt="TIYE participant moment" />
+                <img src="/img/momentsSix.JPG" alt="TIYE community gathering" />
               </div>
-              <div className="pp-body">
-                <span className="pp-tag" style={{ background: 'var(--orange)' }}>03 — AI Safety</span>
-                <h3>AI that is safe, ethical, and trusted</h3>
-                <p>We work with communities, educators, organisations, governments and policymakers to promote responsible AI practices.</p>
-                <Link href="/programmes/ogun-digital-summit" className="link">See the Summit →</Link>
+              <div className="pillar-photo-group" aria-hidden="true">
+                <img src="/img/3ways1.jpg" alt="" />
+                <img src="/img/3ways2.jpg" alt="" />
+                <img src="/img/threeways.JPG" alt="" />
+                <img src="/img/momentOne.jpg" alt="" />
+                <img src="/img/momentsTwo.JPG" alt="" />
+                <img src="/img/momentsThree.jpg" alt="" />
+                <img src="/img/momentsFour.JPG" alt="" />
+                <img src="/img/momentsFive.JPG" alt="" />
+                <img src="/img/momentsSix.JPG" alt="" />
               </div>
             </div>
           </div>
@@ -138,7 +126,7 @@ export default function Home() {
             <div className="overlay-content">
               <span className="eyebrow" style={{ color: 'var(--white)' }}>Our Programmes</span>
               <h2 style={{ marginTop: '12px' }}>Real programmes for real communities.</h2>
-              <p style={{ color: 'var(--white)' }}>Our three programmes turn our mission into action, either in classrooms, communities, or on stage.</p>
+              <p style={{ color: 'var(--white)' }}>Our programs equip young people with AI-native digital skills, close opportunity gaps, and create pathways to economic inclusion across Africa.</p>
             </div>
           </div>
         </div>
@@ -155,7 +143,7 @@ export default function Home() {
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
                 <h3>DigitalSkill4All</h3>
-                <p>Free technology and digital skills training for underserved communities across Africa, including a dedicated track supporting young people living with sickle cell disease.</p>
+                <p>We empower individuals with the digital and technology skills they need to thrive in tomorrow's economy, including a dedicated track to support young people living with sickle cell disease.</p>
                 <Link href="/programmes/digitalskill4all" className="link">View programme →</Link>
               </div>
             </div>
@@ -190,11 +178,11 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">Our Impact</span>
           <h2>Thousands of young people. One digital future.</h2>
-          <p>Across Africa, our programmes are turning digital skills and AI literacy into real opportunity for young people across . See the numbers, and the stories, behind the work.</p>
+          <p>Our programmes transform lives by turning digital skills and AI literacy into real opportunities for young people. See the numbers and the stories behind the work.</p>
           <div className="mini-stat-row" style={{ justifyContent: 'center' }}>
-            <div className="mini-stat"><div className="ms-num">5,856+</div><div className="ms-label">Young people reached</div></div>
+            <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>
             <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
-            <div className="mini-stat"><div className="ms-num">5,000+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
+            <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
           </div>
           <div className="hero-actions" style={{ justifyContent: 'center', marginTop: '32px' }}>
             <Link href="/impact#report" className="btn btn-outline">Download impact report</Link>
@@ -312,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* MOMENTS GALLERY STRIP */}
-      <section className="section-tight" style={{ paddingTop: 0 }}>
+      {/* <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head" style={{ marginBottom: '24px' }}>
             <span className="eyebrow" style={{ color: 'var(--green)' }}>Moments</span>
@@ -327,7 +315,7 @@ export default function Home() {
             <div className="img-ph"><img src="/img/momentsSix.JPG" alt="TIYE community gathering" /></div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );
