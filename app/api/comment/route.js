@@ -8,7 +8,7 @@ const MAX_NAME = 80;
 const MAX_COMMENT = 2000;
 
 export async function POST(request) {
-  if (!process.env.SANITY_API_WRITE_TOKEN) {
+  if (!process.env.SANITY_API_WRITE_TOKEN && !process.env.SANITY_API_TOKEN) {
     return NextResponse.json(
       { error: 'Comments are not configured yet.' },
       { status: 503 }
