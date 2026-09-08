@@ -25,9 +25,9 @@ export default function Home() {
 
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
-              <img className="hc-main" src="/img/one.jpg" alt="A TIYE learner" />
-              <img className="hc-sub" src="/img/two.jpg" alt="Students in a TIYE classroom session" />
-              <img className="hc-sub2" src="/img/three.PNG" alt="A TIYE hands-on workshop" />
+              <img className="hc-main" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780650/one.jpg" alt="A TIYE learner" />
+              <img className="hc-sub" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782123/two.jpg" alt="Students in a TIYE classroom session" />
+              <img className="hc-sub2" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780665/three.jpg" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
