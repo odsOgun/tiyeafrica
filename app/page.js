@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CloudinaryImage from './components/CloudinaryImage';
 import Footer from './components/Footer';
 import PixelGrid from './components/PixelGrid';
 
@@ -25,9 +26,9 @@ export default function Home() {
 
           <div className="hero-collage">
             <div className="pixel-accent"><PixelGrid /></div>
-              <img className="hc-main" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780650/one.jpg" alt="A TIYE learner" />
-              <img className="hc-sub" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782123/two.jpg" alt="Students in a TIYE classroom session" />
-              <img className="hc-sub2" src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780665/three.jpg" alt="A TIYE hands-on workshop" />
+              <CloudinaryImage className="hc-main" width="1200" height="900" src="one" alt="A TIYE learner" />
+              <CloudinaryImage className="hc-sub" width="1200" height="900" src="two" alt="Students in a TIYE classroom session" />
+              <CloudinaryImage className="hc-sub2" width="1200" height="900" src="three" alt="A TIYE hands-on workshop" />
             <div className="hc-badge"><b>3 Pillars</b>Digital Skills · AI Literacy · Responsible AI</div>
           </div>
         </div>
@@ -61,7 +62,7 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-            <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782127/Bridging.jpg" alt="TIYE connecting young people with technology"/>
+            <CloudinaryImage width="1200" height="900" src="Bridging" alt="TIYE connecting young people with technology" />
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -90,26 +91,26 @@ export default function Home() {
           <div className="pillar-photo-gallery" aria-label="TIYE community moments">
             <div className="pillar-photo-track">
               <div className="pillar-photo-group">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782124/3ways1.jpg" alt="Digital skills training in a TIYE community" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780648/3ways2.jpg" alt="AI literacy learning session" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782152/threeways.jpg" alt="Responsible AI community session" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780793/momentOne.jpg" alt="TIYE community moment" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782210/momentsTwo.jpg" alt="TIYE learning moment" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780789/momentsThree.jpg" alt="TIYE programme moment" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782142/momentsFour.jpg" alt="TIYE workshop moment" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782151/momentsFive.jpg" alt="TIYE participant moment" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782205/momentsSix.jpg" alt="TIYE community gathering" />
+                <CloudinaryImage width="1000" height="200" src="3ways1" alt="Digital skills training in a TIYE community" />
+                <CloudinaryImage width="1000" height="200" src="3ways2" alt="AI literacy learning session" />
+                <CloudinaryImage width="1000" height="200" src="threeways" alt="Responsible AI community session" />
+                <CloudinaryImage width="1000" height="200" src="momentOne" alt="TIYE community moment" />
+                <CloudinaryImage width="1000" height="200" src="momentsTwo" alt="TIYE learning moment" />
+                <CloudinaryImage width="1000" height="200" src="momentsThree" alt="TIYE programme moment" />
+                <CloudinaryImage width="1000" height="200" src="momentsFour" alt="TIYE workshop moment" />
+                <CloudinaryImage width="1000" height="200" src="momentsFive" alt="TIYE participant moment" />
+                <CloudinaryImage width="1000" height="200" src="momentsSix" alt="TIYE community gathering" />
               </div>
               <div className="pillar-photo-group" aria-hidden="true">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782124/3ways1.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780648/3ways2.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782152/threeways.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780793/momentOne.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782210/momentsTwo.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780789/momentsThree.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782142/momentsFour.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782151/momentsFive.jpg" alt="" />
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782205/momentsSix.jpg" alt="" />
+                <CloudinaryImage width="1000" height="200" src="3ways1" alt="" />
+                <CloudinaryImage width="1000" height="200" src="3ways2" alt="" />
+                <CloudinaryImage width="1000" height="200" src="threeways" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentOne" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentsTwo" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentsThree" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentsFour" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentsFive" alt="" />
+                <CloudinaryImage width="1000" height="200" src="momentsSix" alt="" />
               </div>
             </div>
           </div>
@@ -121,7 +122,7 @@ export default function Home() {
         <div className="wrap">
           <div className="photo-overlay-block">
             <div className="img-ph on-dark">
-              <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782150/Real_programme.jpg" alt="TIYE programme participants" />
+              <CloudinaryImage width="1200" height="900" src="Real_programme" alt="TIYE programme participants" />
             </div>
             <div className="overlay-content">
               <span className="eyebrow" style={{ color: 'var(--white)' }}>Our Programmes</span>
@@ -138,7 +139,7 @@ export default function Home() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782138/Digital_literacy.jpg" alt="DigitalSkill4All training session" />
+                <CloudinaryImage width="1200" height="900" src="Digital_literacy" alt="DigitalSkill4All training session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -149,7 +150,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782212/ai4allPreview.jpg" alt="AI4All classroom session" />
+                <CloudinaryImage width="1200" height="900" src="ai4allPreview" alt="AI4All classroom session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -160,7 +161,7 @@ export default function Home() {
             </div>
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782153/odsPreview.jpg" alt="Ogun Digital Summit event" />
+                <CloudinaryImage width="1200" height="900" src="odsPreview" alt="Ogun Digital Summit event" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>

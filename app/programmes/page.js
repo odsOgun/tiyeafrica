@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CloudinaryImage from '../components/CloudinaryImage';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -30,7 +31,7 @@ export default function Programmes() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782138/Digital_literacy.jpg" alt="DigitalSkill4All training session" />
+                <CloudinaryImage width="1200" height="900" src="Digital_literacy" alt="DigitalSkill4All training session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -42,7 +43,7 @@ export default function Programmes() {
 
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782212/ai4allPreview.jpg" alt="AI4All classroom session" />
+                <CloudinaryImage width="1200" height="900" src="ai4allPreview" alt="AI4All classroom session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -54,7 +55,7 @@ export default function Programmes() {
 
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782153/odsPreview.jpg" alt="Ogun Digital Summit 2025" />
+                <CloudinaryImage width="1200" height="900" src="odsPreview" alt="Ogun Digital Summit 2025" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>

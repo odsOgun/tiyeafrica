@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CloudinaryImage from '../components/CloudinaryImage';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -25,7 +26,7 @@ function TeamCard({ img, alt, role, roleColor, name }) {
     <div className="team-page-card">
       <div className="tp-photo">
         <div className="img-ph ratio-4x5">
-          <img src={img} alt={alt} />
+          <CloudinaryImage width="800" height="1000" src={img} alt={alt} />
         </div>
       </div>
       <div className="tp-body">
@@ -55,8 +56,8 @@ export default function Team() {
         <div className="wrap team-group">
           <span className="team-group-label">Leadership</span>
           <div className="team-page-grid">
-            <TeamCard img="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782132/victor.png" alt="Victor Adeleye, TIYE President" role="President" name="Victor Adeleye" />
-            <TeamCard img="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780792/seunbayo.png" alt="Programmes Director" role="Executive Director" roleColor="var(--green)" name="Adebayo Oluwaseun" />
+            <TeamCard img="victor" alt="Victor Adeleye, TIYE President" role="President" name="Victor Adeleye" />
+            <TeamCard img="seunbayo" alt="Programmes Director" role="Executive Director" roleColor="var(--green)" name="Adebayo Oluwaseun" />
           </div>
         </div>
       </section>
@@ -66,9 +67,9 @@ export default function Team() {
         <div className="wrap team-group" style={{ marginBottom: 0 }}>
           <span className="team-group-label">Programme &amp; Operations Team</span>
           <div className="team-page-grid">
-            <TeamCard img="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782147/Tosin_s_Protrait.png" alt="Digital Skills Lead" role="Programs Manager" roleColor="var(--orange)" name="Oluwatosin Iyiola" />
-            <TeamCard img="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780649/Joyce.Adeyemi.jpg" alt="AI Literacy Lead" role="Communications Manager" roleColor="var(--blue)" name="Joyce Adeyemi" />
-            <TeamCard img="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782155/temitayo.png" alt="Partnerships & Communications" role="Associate Programs Manager" roleColor="var(--green)" name="Halira Temitayo" />
+            <TeamCard img="Tosin_s_Protrait" alt="Digital Skills Lead" role="Programs Manager" roleColor="var(--orange)" name="Oluwatosin Iyiola" />
+            <TeamCard img="Joyce.Adeyemi" alt="AI Literacy Lead" role="Communications Manager" roleColor="var(--blue)" name="Joyce Adeyemi" />
+            <TeamCard img="temitayo" alt="Partnerships & Communications" role="Associate Programs Manager" roleColor="var(--green)" name="Halira Temitayo" />
           </div>
       </div>
       </section>

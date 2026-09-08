@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CloudinaryImage from '../../components/CloudinaryImage';
 import Footer from '../../components/Footer';
 
 export const metadata = {
@@ -33,7 +34,7 @@ export default function AI4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782135/AIFORALL.jpg" alt="AI4All classroom session" />
+            <CloudinaryImage width="1600" height="900" src="AIFORALL" alt="AI4All classroom session" />
           </div>
         </div>
       </section>
@@ -106,12 +107,12 @@ export default function AI4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782162/gallery21.jpg" alt="AI4All training activity" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782132/gallery22.jpg" alt="AI4All participants in discussion" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782171/gallery23.jpg" alt="AI4All workshop participants" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782141/gallery24.jpg" alt="AI4All classroom activity" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782143/gallery25.jpg" alt="AI4All learning session" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782137/gallery26.jpg" alt="AI4All community workshop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery21" alt="AI4All training activity" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery22" alt="AI4All participants in discussion" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery23" alt="AI4All workshop participants" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery24" alt="AI4All classroom activity" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery25" alt="AI4All learning session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><CloudinaryImage width="1200" height="900" src="gallery26" alt="AI4All community workshop" /></div>
           </div>
         </div>
       </section>
