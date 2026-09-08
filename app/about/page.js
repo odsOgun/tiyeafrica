@@ -28,12 +28,12 @@ export default function About() {
         </div>
         <div className="wrap">
           <div className="mosaic-grid">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief1.jpg" alt="TIYE community learning session" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief2.jpg" alt="TIYE participants learning together" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief3.jpg" alt="Young people taking part in TIYE activities" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief4.jpg" alt="TIYE digital skills workshop" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief5.jpg" alt="TIYE community members collaborating" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/ourbelief6.jpg" alt="TIYE group photo" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782128/ourbelief1.jpg" alt="TIYE community learning session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780790/ourbelief2.jpg" alt="TIYE participants learning together" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782128/ourbelief3.jpg" alt="Young people taking part in TIYE activities" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782119/ourbelief4.jpg" alt="TIYE digital skills workshop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780779/ourbelief5.jpg" alt="TIYE community members collaborating" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782130/ourbelief6.jpg" alt="TIYE group photo" /></div>
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function About() {
             <p>An Africa where every young person has the knowledge, skills, and opportunities to thrive in a digital world with opportunity within reach of everyone, everywhere, regardless of where they start.</p>
           </div>
           <div className="img-ph ratio-4x3">
-            <img src="/img/theVision.JPG" alt="Young people learning with technology" />
+            <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782166/theVision.jpg" alt="Young people learning with technology" />
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function About() {
         <div className="wrap">
           <div className="people-teaser">
             <div className="tp-photo img-ph ratio-1x1">
-              <img src="/img/ourPeople.JPG" alt="TIYE team at work" />
+              <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782163/ourPeople.jpg" alt="TIYE team at work" />
             </div>
             <div className="people-teaser-text">
               <span className="eyebrow" style={{ color: 'var(--blue)' }}>Our People</span>

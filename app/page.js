@@ -19,7 +19,7 @@ export default function Home() {
             <div className="mini-stat-row" style={{ JustifyContent: 'center' }}>
               <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>
               <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
-              <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
+              <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Summit attendees</div></div>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="about-photo-wrap">
             <div className="img-ph">
-            <img src="/img/Bridging.jpg" alt="TIYE connecting young people with technology"/>
+            <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782127/Bridging.jpg" alt="TIYE connecting young people with technology"/>
             </div>
             <div className="about-overlap-card">
               <div className="vm-row">
@@ -90,26 +90,26 @@ export default function Home() {
           <div className="pillar-photo-gallery" aria-label="TIYE community moments">
             <div className="pillar-photo-track">
               <div className="pillar-photo-group">
-                <img src="/img/3ways1.jpg" alt="Digital skills training in a TIYE community" />
-                <img src="/img/3ways2.jpg" alt="AI literacy learning session" />
-                <img src="/img/threeways.JPG" alt="Responsible AI community session" />
-                <img src="/img/momentOne.jpg" alt="TIYE community moment" />
-                <img src="/img/momentsTwo.JPG" alt="TIYE learning moment" />
-                <img src="/img/momentsThree.jpg" alt="TIYE programme moment" />
-                <img src="/img/momentsFour.JPG" alt="TIYE workshop moment" />
-                <img src="/img/momentsFive.JPG" alt="TIYE participant moment" />
-                <img src="/img/momentsSix.JPG" alt="TIYE community gathering" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782124/3ways1.jpg" alt="Digital skills training in a TIYE community" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780648/3ways2.jpg" alt="AI literacy learning session" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782152/threeways.jpg" alt="Responsible AI community session" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780793/momentOne.jpg" alt="TIYE community moment" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782210/momentsTwo.jpg" alt="TIYE learning moment" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780789/momentsThree.jpg" alt="TIYE programme moment" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782142/momentsFour.jpg" alt="TIYE workshop moment" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782151/momentsFive.jpg" alt="TIYE participant moment" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782205/momentsSix.jpg" alt="TIYE community gathering" />
               </div>
               <div className="pillar-photo-group" aria-hidden="true">
-                <img src="/img/3ways1.jpg" alt="" />
-                <img src="/img/3ways2.jpg" alt="" />
-                <img src="/img/threeways.JPG" alt="" />
-                <img src="/img/momentOne.jpg" alt="" />
-                <img src="/img/momentsTwo.JPG" alt="" />
-                <img src="/img/momentsThree.jpg" alt="" />
-                <img src="/img/momentsFour.JPG" alt="" />
-                <img src="/img/momentsFive.JPG" alt="" />
-                <img src="/img/momentsSix.JPG" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782124/3ways1.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780648/3ways2.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782152/threeways.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780793/momentOne.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782210/momentsTwo.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788780789/momentsThree.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782142/momentsFour.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782151/momentsFive.jpg" alt="" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782205/momentsSix.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -121,11 +121,11 @@ export default function Home() {
         <div className="wrap">
           <div className="photo-overlay-block">
             <div className="img-ph on-dark">
-              <img src="/img/Real programme.jpg" alt="TIYE programme participants" />
+              <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782150/Real_programme.jpg" alt="TIYE programme participants" />
             </div>
             <div className="overlay-content">
               <span className="eyebrow" style={{ color: 'var(--white)' }}>Our Programmes</span>
-              <h2 style={{ marginTop: '12px' }}>Real programmes for real communities.</h2>
+              {/* <h2 style={{ marginTop: '12px' }}>Real programmes for real communities.</h2> */}
               <p style={{ color: 'var(--white)' }}>Our programs equip young people with AI-native digital skills, close opportunity gaps, and create pathways to economic inclusion across Africa.</p>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Home() {
           <div className="prog-grid">
             <div className="prog-card c1">
               <div className="img-ph ratio-4x3">
-                <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782138/Digital_literacy.jpg" alt="DigitalSkill4All training session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
             <div className="prog-card c2">
               <div className="img-ph ratio-4x3">
-                <img src="/img/ai4allPreview.JPG" alt="AI4All classroom session" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782212/ai4allPreview.jpg" alt="AI4All classroom session" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
             <div className="prog-card c3">
               <div className="img-ph ratio-4x3">
-                <img src="/img/odsPreview.JPG" alt="Ogun Digital Summit event" />
+                <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782153/odsPreview.jpg" alt="Ogun Digital Summit event" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
@@ -177,7 +177,7 @@ export default function Home() {
       <section className="section impact" id="impact">
         <div className="wrap">
           <span className="eyebrow">Our Impact</span>
-          <h2>Thousands of young people. One digital future.</h2>
+          {/* <h2>Thousands of young people. One digital future.</h2> */}
           <p>Our programmes transform lives by turning digital skills and AI literacy into real opportunities for young people. See the numbers and the stories behind the work.</p>
           <div className="mini-stat-row" style={{ justifyContent: 'center' }}>
             <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>

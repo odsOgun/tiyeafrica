@@ -30,7 +30,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <img src="/img/Digital literacy.jpg" alt="DigitalSkill4All training session" />
+            <img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782138/Digital_literacy.jpg" alt="DigitalSkill4All training session" />
           </div>
         </div>
       </section>
@@ -103,12 +103,12 @@ export default function DigitalSkill4All() {
         <div className="wrap">
           <h2 style={{ marginBottom: '24px' }}>Gallery</h2>
           <div className="masonry-gallery">
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery11.JPG" alt="Digital skills training session" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery12.JPG" alt="Learner using a laptop" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery13.JPG" alt="Digital skills classroom" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery14.JPG" alt="Digital skills graduation" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery15.JPG" alt="Digital skills learner group" /></div>
-            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="/img/gallery16.JPG" alt="Digital skills mentorship session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782157/gallery11.jpg" alt="Digital skills training session" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782145/gallery12.jpg" alt="Learner using a laptop" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782189/gallery13.jpg" alt="Digital skills classroom" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782140/gallery14.jpg" alt="Digital skills graduation" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782134/gallery15.jpg" alt="Digital skills learner group" /></div>
+            <div className="img-ph" style={{ aspectRatio: '4/3' }}><img src="https://res.cloudinary.com/amb0f0i2/image/upload/v1788782136/gallery16.jpg" alt="Digital skills mentorship session" /></div>
           </div>
         </div>
       </section>
