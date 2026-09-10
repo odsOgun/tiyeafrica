@@ -40,26 +40,7 @@ export default function ContactPage() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const message = formData.get('message');
-    const phone = formData.get('phone');
-
-    const phoneIsValid =
-      !phone ||
-      (/^\+?[0-9 ()-]+$/.test(phone) &&
-        (phone.match(/\d/g)?.length ?? 0) >= 7);
-
-    form.elements.phone.setCustomValidity(
-      phoneIsValid
-        ? ''
-        : 'Enter a phone number with at least 7 digits.'
-    );
-
-    if (
-      !form.checkValidity() ||
-      !reasons.includes(formData.get('reason')) ||
-      !message?.trim() ||
-      !phoneIsValid
-    ) {
+    if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
@@ -157,10 +138,10 @@ export default function ContactPage() {
               </div>
               <div className="form-row">
                 <label>Organisation <input name="organisation" type="text" autoComplete="organization" maxLength="100" pattern="[A-Za-z0-9À-ÖØ-öø-ÿ][A-Za-z0-9À-ÖØ-öø-ÿ &.,'()/-]{1,99}" title="Use letters, numbers, spaces, and common punctuation only." placeholder="Your organisation" /></label>
-                <label>Phone Number <input name="phone" type="tel" autoComplete="tel" maxLength="20" pattern="\+?[0-9 ()-]{7,20}" title="Enter a valid phone number using digits, spaces, parentheses, hyphens, and an optional plus sign." placeholder="+234..." /></label>
+                <label>Phone Number <input name="phone" type="tel" autoComplete="tel" placeholder="+234..." /></label>
               </div>
-              <label>Reason for contacting us<select name="reason" value={reason} onChange={(event) => setReason(event.target.value)} required><option value="" disabled>Select a reason</option>{reasons.map((option) => <option key={option}>{option}</option>)}</select></label>
-              <label>Message<textarea name="message" required minLength="10" maxLength="2000" rows="6" placeholder="How can we help?"></textarea></label>
+              <label>Reason for contacting us<select name="reason" value={reason} onChange={(event) => setReason(event.target.value)}><option value="">Select a reason</option>{reasons.map((option) => <option key={option}>{option}</option>)}</select></label>
+              <label>Message<textarea name="message" rows="6" placeholder="How can we help?"></textarea></label>
               <button
                 type="submit"
                 className="btn btn-primary form-submit"
