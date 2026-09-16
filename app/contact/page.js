@@ -1,4 +1,5 @@
 'use client';
+import CloudinaryImage from '../components/CloudinaryImage';
 
 import { useEffect, useRef, useState } from 'react';
 import Footer from '../components/Footer';
@@ -94,16 +95,10 @@ export default function ContactPage() {
               <button type="button" className="btn btn-primary" onClick={() => focusForm()}>Get in touch →</button>
             </div>
             <div className="contact-hero-art" aria-hidden="true">
-              <div className="contact-orbit contact-orbit-one"></div>
-              <div className="contact-orbit contact-orbit-two"></div>
-              <div className="contact-art-card">
-                <span className="contact-art-label">Open to possibility</span>
-                <strong>Ideas become impact when we build together.</strong>
-                <div className="contact-art-dots"><i></i><i></i><i></i><i></i><i></i></div>
-              </div>
+              <div className='img-ph'><CloudinaryImage width="1200" height="900" src="IMG_0222.jpg" alt="TIYE community learning session" /></div>
             </div>
           </div>
-        </section>
+      </section>
 
         <section className="section bg-white contact-main" ref={formRef} id="contact-form">
           <div className="wrap contact-grid">
