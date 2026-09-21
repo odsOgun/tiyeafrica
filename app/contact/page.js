@@ -95,7 +95,13 @@ export default function ContactPage() {
               <button type="button" className="btn btn-primary" onClick={() => focusForm()}>Get in touch →</button>
             </div>
             <div className="contact-hero-art" aria-hidden="true">
-              <div className='img-ph'><CloudinaryImage width="1200" height="900" src="IMG_0222.jpg" alt="TIYE community learning session" /></div>
+              <div className="contact-orbit contact-orbit-one"></div>
+              <div className="contact-orbit contact-orbit-two"></div>
+              <div className="contact-art-card">
+                <span className="contact-art-label">Open to possibility</span>
+                <strong>Ideas become impact when we build together.</strong>
+                <div className="contact-art-dots"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
             </div>
           </div>
       </section>
@@ -173,6 +179,59 @@ export default function ContactPage() {
         {/* <section className="section contact-impact">
           <div className="wrap contact-impact-inner"><span className="eyebrow">Our shared future</span><h2>Together, we can create more opportunities.</h2><p>Young people deserve access to the skills, knowledge, and opportunities they need to shape the future. Let&apos;s build that future together.</p><button type="button" className="btn btn-white" onClick={() => focusForm()}>Get Involved →</button></div>
         </section> */}
+      <section className="contact-page-last-hero">
+        <div className="flex-container">
+          <div className='image-div'>
+            <CloudinaryImage width="900" height="580" src="IMG_0222.jpg" alt="TIYE community learning session" />
+          </div>
+          <div className="contact-page-right-div">
+            <h1><span style={{ color: 'var(--orange)' }}>Connect</span> With Us</h1>
+            <div className="contact-info-list">
+              <div className="info-flex-grid">
+              {/* <link href="mailto:info@tiyeafrica.org" target="_blank" rel="noopener noreferrer"> */}
+              <div className="mail-info">
+                <a href="mailto:info@tiyeafrica.org" target="_blank" rel="noopener noreferrer">
+                  <CloudinaryImage width="50" height="50" src="mailIcon.jpg" alt="Email icon" />
+                <div className="mail-info-text">
+                    <h4>Mail</h4>
+                    <p><strong>hello@tiyeafrica.org</strong></p>
+                  </div>
+                </a>
+              </div>
+              <div className="mail-info">
+                <a href="https://www.instagram.com/tiyeafrica/" target="_blank" rel="noopener noreferrer">
+                  <CloudinaryImage width="50" height="50" src="instagram_Icon.png" alt="Instagram icon" /> 
+                  <div className="mail-info-text">
+                    <h4>Instagram</h4>
+                    <p><strong>@tiyeafrica</strong></p>
+                  </div>
+                </a>
+              </div>
+              <div className="mail-info">
+                <a href="https://twitter.com/tiyeafrica" target="_blank" rel="noopener noreferrer">
+                  <CloudinaryImage width="50" height="50" src="twitterxIcon.png" alt="Twitter icon" />
+                  <div className="mail-info-text">
+                    <h4>Twitter</h4>
+                    <p><strong>@tiyeafrica</strong></p>
+                  </div>
+                </a>
+              </div>
+              <div className="mail-info">
+                <a href="https://www.linkedin.com/company/tiyeafrica/" target="_blank" rel="noopener noreferrer">
+                  <CloudinaryImage width="50" height="50" src="LinkedIn_icon.svg.webp" alt="LinkedIn icon" />
+                  <div className="mail-info-text">
+                    <h4>LinkedIn</h4>
+                    <p><strong>tiyeafrica</strong></p>
+                  </div>
+                </a>
+              </div>
+                {/* <CloudinaryImage width="50" height="50" src="instagram_Icon.png" alt="Instagram icon" /> */}
+              </div>
+              {/* </link> */}
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
       <Footer />
     </>
