@@ -182,7 +182,7 @@ export default function ContactPage() {
       <section className="contact-page-last-hero">
         <div className="flex-container">
           <div className='image-div'>
-            <CloudinaryImage width="900" height="580" src="IMG_0222.jpg" alt="TIYE community learning session" />
+            <CloudinaryImage width="1200" height="900" src="Bridging" alt="TIYE connecting young people with technology" />
           </div>
           <div className="contact-page-right-div">
             <h1><span style={{ color: 'var(--orange)' }}>Connect</span> With Us</h1>

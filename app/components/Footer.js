@@ -10,6 +10,13 @@ export default function Footer() {
               <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
             </Link>
             <p>Empowering youth through technology digital skills, AI literacy, and responsible AI adoption across Africa.</p>
+            {/* <div className='newsletter'>
+            <h5>Subscribe to our Newsletter & Blog updates</h5>
+            <form action="https://tiyeafrica.us1.list-manage.com/subscribe/post?u=3f0c5e7b8d4a9f6e2c8b1e2c3&amp;id=1234567890" method="post" target="_blank" noValidate>
+              <input type="email" name="EMAIL" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div> */}
           </div>
           <div className="footer-col">
             <h5>Explore</h5>

@@ -398,7 +398,7 @@ hr.soft{border:none; border-top:1px solid rgba(26,26,46,.08); margin:0;}
   letter-spacing:0;
   margin-bottom:30px;
 }
-.contact-page-right-div h1 span{display:block;}
+/* .contact-page-right-div h1 span{display:block;} */
 .contact-page-last-hero .contact-info-list{margin:0;}
 .info-flex-grid{
   display:grid;
