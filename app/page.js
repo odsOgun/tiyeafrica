@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CloudinaryImage from './components/CloudinaryImage';
 import Footer from './components/Footer';
 import PixelGrid from './components/PixelGrid';
+import NewsletterModal from './components/NewsletterModal';
 
 export default function Home() {
   return (
@@ -281,24 +282,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DONATE — photo CTA band */}
-      <section className="section-tight" id="donate">
-        <div className="wrap">
-          <div className="cta-photo-band">
-            <div className="img-ph on-dark">
-              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /></svg>
-              <span>Wide community photo</span>
-            </div>
-            <div className="cta-content">
-              <div>
-                <h2>Your gift builds Africa&apos;s digital future.</h2>
-                <p>Every donation helps TIYE reach more young people with digital skills, AI literacy, and the tools to thrive responsibly in a digital world.</p>
-              </div>
-              <a href="#contact" className="btn btn-white">Donate now</a>
-            </div>
+      {/* Newsletter subscription section */}
+      <section className="wrap narrow post-newsletter" aria-label="Newsletter subscription">
+        <div className="post-newsletter-card">
+          <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
+          <div className="post-newsletter-copy">
+            <p className="eyebrow">Stay in the loop</p>
+            <h2>Want more updates from TIYE?</h2>
+              <p>
+                Join our newsletter community for programme updates, impact stories,
+                events, and opportunities across digital skills and AI literacy.
+              </p>
           </div>
+            <NewsletterModal triggerLabel="Join here" />
         </div>
-      </section>
+      </section>          
 
       {/* MOMENTS GALLERY STRIP */}
       {/* <section className="section-tight" style={{ paddingTop: 0 }}>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import CloudinaryImage from '../components/CloudinaryImage';
 import Footer from '../components/Footer';
+import NewsletterModal from '../components/NewsletterModal';
 
 export const metadata = {
   title: 'About Us — TIYE',
@@ -167,16 +168,21 @@ export default function About() {
         </div>
       </section> */}
 
-      {/* JOIN THE TEAM */}
-      <section className="section-tight bg-white" style={{ borderTop: '1px solid rgba(26,26,46,.08)', borderBottom: '1px solid rgba(26,26,46,.08)' }}>
-        <div className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', flexWrap: 'wrap' }}>
-          <div>
-            <span className="eyebrow" style={{ color: 'var(--blue)' }}>Join Us</span>
-            <h3 style={{ marginTop: '10px' }}>Want to work or volunteer with TIYE?</h3>
-          </div>
-          <Link href="/#involved" className="btn btn-blue">See how to get involved →</Link>
-        </div>
-      </section>
+      {/* Newsletter subscription section */}
+            <section className="wrap narrow post-newsletter" aria-label="Newsletter subscription">
+              <div className="post-newsletter-card">
+                <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
+                <div className="post-newsletter-copy">
+                  <p className="eyebrow">Stay in the loop</p>
+                  <h2>Want more updates from TIYE?</h2>
+                    <p>
+                      Join our newsletter community for programme updates, impact stories,
+                      events, and opportunities across digital skills and AI literacy.
+                    </p>
+                </div>
+                  <NewsletterModal triggerLabel="Join here" />
+              </div>
+            </section>
 
       {/* DONATE */}
       {/* <section className="section-tight donate" id="donate-about">

@@ -3,7 +3,7 @@ import NewsletterForm from './NewsletterForm';
 
 export default function Footer() {
   return (
-    <footer id="contact">
+  <footer>
       <div className="wrap">
         <div className="footer-top">
           <div className="footer-brand">
@@ -11,7 +11,7 @@ export default function Footer() {
               <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
             </Link>
             <p>Empowering youth through technology digital skills, AI literacy, and responsible AI adoption across Africa.</p>
-            <NewsletterForm />
+            {/* <NewsletterForm /> */}
           </div>
           <div className="footer-col">
             <h5>Explore</h5>
