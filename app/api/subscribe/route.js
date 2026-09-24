@@ -53,9 +53,22 @@ export async function POST(request) {
     });
 
     if (!response.ok) {
-      console.error('Brevo subscription failed:', response.status, await response.text());
+      const errorBody = await response.json().catch(() => ({}));
+      const errorCode = typeof errorBody.code === 'string' ? errorBody.code : 'unknown';
+      const errorMessage = typeof errorBody.message === 'string' ? errorBody.message : 'No details returned';
+
+      console.error('Brevo subscription failed:', {
+        status: response.status,
+        code: errorCode,
+        message: errorMessage,
+        listId,
+      });
+
       return NextResponse.json(
-        { error: 'Could not subscribe you right now. Please try again.' },
+        {
+          error: 'Could not subscribe you right now. Please try again.',
+          reason: `Brevo returned ${response.status} (${errorCode}).`,
+        },
         { status: 502 }
       );
     }

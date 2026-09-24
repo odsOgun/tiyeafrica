@@ -30,7 +30,7 @@ export default function NewsletterForm({ className = '', title = 'Subscribe to o
 
       if (!response.ok) {
         setStatus('error');
-        setMessage(result.error || 'Something went wrong. Please try again.');
+        setMessage(result.reason || result.error || 'Something went wrong. Please try again.');
         return;
       }
 
