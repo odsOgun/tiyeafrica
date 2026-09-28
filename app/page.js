@@ -283,18 +283,20 @@ export default function Home() {
       </section>
 
       {/* Newsletter subscription section */}
-      <section className="wrap narrow post-newsletter" aria-label="Newsletter subscription">
-        <div className="post-newsletter-card">
-          <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
-          <div className="post-newsletter-copy">
-            <p className="eyebrow">Stay in the loop</p>
-            <h2>Want more updates from TIYE?</h2>
+      <section className="section-tight post-newsletter post-newsletter--wide" aria-label="Newsletter subscription">
+        <div className="wrap">
+          <div className="post-newsletter-card">
+            <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
+            <div className="post-newsletter-copy">
+              <p className="eyebrow">Stay in the loop</p>
+              <h2>Want more updates from TIYE?</h2>
               <p>
                 Join our newsletter community for programme updates, impact stories,
                 events, and opportunities across digital skills and AI literacy.
               </p>
-          </div>
+            </div>
             <NewsletterModal triggerLabel="Join here" />
+          </div>
         </div>
       </section>          
 
