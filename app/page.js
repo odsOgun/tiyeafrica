@@ -166,7 +166,7 @@ export default function Home() {
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
-                <h3>OgunDigitalSummit</h3>
+                <h3>Ogun Digital Summit</h3>
                 <p>Our flagship annual technology conference, bringing together students, entrepreneurs, investors, and policymakers to shape Africa&apos;s digital economy.</p>
                 <Link href="https://www.ogundigitalsummit.com/" className="link" target="_blank" rel="noopener noreferrer">View programme →</Link>
               </div>

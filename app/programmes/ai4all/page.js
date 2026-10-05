@@ -20,13 +20,13 @@ export default function AI4All() {
             <p className="eyebrow" style={{ color: 'var(--green)' }}>Pillar 02 — AI Literacy</p>
           </div>
           <h1>AI4All</h1>
-          <p className="lede" style={{ color: 'var(--ink-soft)' }}>Making artificial intelligence understandable for every young person — not just how to use it, but how to use it responsibly.</p>
-          <div className="fact-bar">
+          <p className="lede" style={{ color: 'var(--ink-soft)' }}>Making artificial intelligence understandable for every young person - not just how to use it, but how to use it responsibly.</p>
+          {/* <div className="fact-bar">
             <div className="fact-chip fact-chip-light"><b>Cost</b>Free</div>
             <div className="fact-chip fact-chip-light"><b>Audience</b>Schools, tertiary, community</div>
             <div className="fact-chip fact-chip-light"><b>Format</b>[Workshop / classroom]</div>
             <div className="fact-chip fact-chip-light"><b>Location</b>[Add location]</div>
-          </div>
+          </div> */}
         </div>
       </section>
 
