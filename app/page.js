@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CloudinaryImage from './components/CloudinaryImage';
 import Footer from './components/Footer';
 import PixelGrid from './components/PixelGrid';
+import NewsletterModal from './components/NewsletterModal';
 
 export default function Home() {
   return (
@@ -165,7 +166,7 @@ export default function Home() {
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
-                <h3>OgunDigitalSummit</h3>
+                <h3>Ogun Digital Summit</h3>
                 <p>Our flagship annual technology conference, bringing together students, entrepreneurs, investors, and policymakers to shape Africa&apos;s digital economy.</p>
                 <Link href="https://www.ogundigitalsummit.com/" className="link" target="_blank" rel="noopener noreferrer">View programme →</Link>
               </div>
@@ -281,24 +282,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DONATE — photo CTA band */}
-      <section className="section-tight" id="donate">
+      {/* Newsletter subscription section */}
+      <section className="section-tight post-newsletter post-newsletter--wide" aria-label="Newsletter subscription">
         <div className="wrap">
-          <div className="cta-photo-band">
-            <div className="img-ph on-dark">
-              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /></svg>
-              <span>Wide community photo</span>
+          <div className="post-newsletter-card">
+            <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
+            <div className="post-newsletter-copy">
+              <p className="eyebrow">Stay in the loop</p>
+              <h2>Want more updates from TIYE?</h2>
+              <p>
+                Join our newsletter community for programme updates, impact stories,
+                events, and opportunities across digital skills and AI literacy.
+              </p>
             </div>
-            <div className="cta-content">
-              <div>
-                <h2>Your gift builds Africa&apos;s digital future.</h2>
-                <p>Every donation helps TIYE reach more young people with digital skills, AI literacy, and the tools to thrive responsibly in a digital world.</p>
-              </div>
-              <a href="#contact" className="btn btn-white">Donate now</a>
-            </div>
+            <NewsletterModal triggerLabel="Join here" />
           </div>
         </div>
-      </section>
+      </section>          
 
       {/* MOMENTS GALLERY STRIP */}
       {/* <section className="section-tight" style={{ paddingTop: 0 }}>
