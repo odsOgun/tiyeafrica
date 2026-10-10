@@ -18,6 +18,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/about">About TIYE</Link></li>
               <li><Link href="/programmes">Our Programmes</Link></li>
+              <li><Link href="/ai-training">AI Training</Link></li>
               <li><Link href="/impact">Our Impact</Link></li>
             </ul>
           </div>
