@@ -65,6 +65,7 @@ export default function Header() {
     { href: '/about', label: 'About' },
     { href: '/team', label: 'Team' },
     { href: '/programmes', label: 'Programmes' },
+    // { href: '/ai-training', label: 'AI Training' },
     { href: '/news', label: 'News' },
     // { href: '/impact', label: 'Impact' },
   ];
