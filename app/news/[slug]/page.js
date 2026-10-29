@@ -8,6 +8,7 @@ import { postBySlugQuery, postSlugsQuery } from '@/sanity/lib/queries';
 import CommentForm from '../CommentForm';
 import PostBody from './PostBody';
 import { formatDate } from '../format';
+import NewsletterModal from '../../components/NewsletterModal';
 
 export const revalidate = 60;
 
@@ -90,6 +91,23 @@ export default async function PostPage({ params }) {
         <div className="wrap narrow post-content">
           <PostBody value={post.body} />
         </div>
+
+        {/* Newsletter subscription section */}
+
+        <section className="wrap narrow post-newsletter" aria-label="Newsletter subscription">
+          <div className="post-newsletter-card">
+            <img src="/img/Tiye short full logo.png" alt="TIYE logo" width={100} height={35} />
+            <div className="post-newsletter-copy">
+              <p className="eyebrow">Stay in the loop</p>
+              <h2>Want more updates from TIYE?</h2>
+              <p>
+                Join our newsletter community for programme updates, impact stories,
+                events, and opportunities across digital skills and AI literacy.
+              </p>
+            </div>
+            <NewsletterModal triggerLabel="Join here" />
+          </div>
+        </section>
 
         {/* COMMENTS */}
         <section className="wrap narrow post-comments">

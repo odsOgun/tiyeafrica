@@ -15,15 +15,15 @@ export default function DigitalSkill4All() {
       <section className="prog-hero-simple">
         <div className="wrap">
           <Link href="/programmes" className="back-link">← Back to programmes</Link>
-          <div><span className="eyebrow" style={{ color: 'var(--blue)' }}>Pillar 01 — Digital Skills Development</span></div>
+          {/* <div><span className="eyebrow" style={{ color: 'var(--blue)' }}>Pillar 01 — Digital Skills Development</span></div> */}
           <h1>DigitalSkill4All</h1>
-          <p className="lede" style={{ color: 'var(--ink-soft)' }}>Equipping underserved communities with essential digital, technology and career-readiness skills to participate in the digital economy.</p>
-          <div className="fact-bar">
+          <p className="lede" style={{ color: 'var(--ink-soft)' }}>One of Nigeria largest digital skill campaigns for underserved communities driving learning and  inclusion in Nigeria's digital economy.</p>
+          {/* <div className="fact-bar">
             <div className="fact-chip fact-chip-light"><b>Cost</b>Free</div>
             <div className="fact-chip fact-chip-light"><b>Format</b>[Add format]</div>
             <div className="fact-chip fact-chip-light"><b>Duration</b>[Add duration]</div>
             <div className="fact-chip fact-chip-light"><b>Location</b>[Add location]</div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -31,7 +31,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="img-ph ratio-16x9 hero-photo-lg">
-            <CloudinaryImage width="1600" height="900" src="Digital_literacy" alt="DigitalSkill4All training session" />
+            <CloudinaryImage width="1600" height="900" src="DSkill4all" alt="DigitalSkill4All training session" />
           </div>
         </div>
       </section>
@@ -40,8 +40,7 @@ export default function DigitalSkill4All() {
       <section className="section-tight">
         <div className="wrap narrow">
           <h2>About the programme</h2>
-          <p>DigitalSkill4All is designed to expand equitable access to foundational digital literacy for young people in underserved communities. It&apos;s the entry point into TIYE&apos;s Digital Skills Development pillar, turning digital literacy into a real, sustainable livelihood.</p>
-          <p>One of our most impactful editions focused on supporting young people living with sickle cell disease — providing digital skills that create opportunities for remote work, employment, and entrepreneurship. It&apos;s proof that inclusive design changes who gets to participate in the digital economy.</p>
+          <p>DigitalSkill4All  advances national digital inclusion by equipping underserved youths with practical digital, technology and AI literacy skills. It's the entry point into TIYE's Digital Skills Development pillar, turning digital literacy into a real, sustainable livelihood.</p>
         </div>
       </section>
 
@@ -49,22 +48,27 @@ export default function DigitalSkill4All() {
       <section className="section-tight">
         <div className="wrap">
           <h2 style={{ marginBottom: '28px' }}>Programme objectives</h2>
-          <div className="objectives-list">
-            <div className="obj-item">
-              <span className="obj-num" style={{ background: 'var(--blue)' }}>1</span>
-              <p>To equip underserved young people with foundational digital literacy and practical software skills.</p>
+          <div className="objectives-layout">
+            <div className="objectives-list">
+              <div className="obj-item">
+                <span className="obj-num" style={{ background: 'var(--blue)' }}>1</span>
+                <p>To unlock access to digital literacy for underserved people.</p>
+              </div>
+              <div className="obj-item">
+                <span className="obj-num" style={{ background: 'var(--blue)' }}>2</span>
+                <p>To create an inclusive pathway for young people facing additional barriers to employment.</p>
+              </div>
+              <div className="obj-item">
+                <span className="obj-num" style={{ background: 'var(--blue)' }}>3</span>
+                <p>To strengthen the National Digital Literacy Framework.</p>
+              </div>
+              <div className="obj-item">
+                <span className="obj-num" style={{ background: 'var(--blue)' }}>4</span>
+                <p>To influence and Strengthen National Digital Basic Education program.</p>
+              </div>
             </div>
-            <div className="obj-item">
-              <span className="obj-num" style={{ background: 'var(--blue)' }}>2</span>
-              <p>To provide career-readiness coaching — CVs, interviews and portfolios — that turns new skills into real opportunities.</p>
-            </div>
-            <div className="obj-item">
-              <span className="obj-num" style={{ background: 'var(--blue)' }}>3</span>
-              <p>To create an inclusive pathway for groups facing additional barriers to employment, including young people living with sickle cell disease.</p>
-            </div>
-            <div className="obj-item">
-              <span className="obj-num" style={{ background: 'var(--blue)' }}>4</span>
-              <p>To connect graduates to remote work, employment, and entrepreneurship opportunities.</p>
+            <div className="objectives-media">
+              <CloudinaryImage width="1600" height="900" src="programObjectives" alt="DigitalSkill4All training session" />
             </div>
           </div>
         </div>
