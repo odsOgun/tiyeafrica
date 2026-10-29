@@ -139,8 +139,8 @@ export default function Home() {
         <div className="wrap">
           <div className="prog-grid">
             <div className="prog-card c1">
-              <div className="img-ph ratio-4x3">
-                <CloudinaryImage width="1200" height="900" src="Digital_literacy" alt="DigitalSkill4All training session" />
+              <div className="img-ph ratio-4x3 on-navy">
+                <img src="/img/digitalskill4all.webp" alt="DigitalSkill4All logo" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" /></svg></div>
@@ -150,8 +150,8 @@ export default function Home() {
               </div>
             </div>
             <div className="prog-card c2">
-              <div className="img-ph ratio-4x3">
-                <CloudinaryImage width="1200" height="900" src="ai4allPreview" alt="AI4All classroom session" />
+              <div className="img-ph ratio-4x3 on-navy">
+                <img src="/img/ai4all.webp" alt="AI4All logo" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#10B981" strokeWidth="2" /><path d="M12 8v4l3 2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" /></svg></div>

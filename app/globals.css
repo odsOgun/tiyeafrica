@@ -170,6 +170,9 @@ header{
 /* Real photo dropped into a placeholder: the photo becomes the frame */
 .img-ph:has(img){display:block; padding:0; border:0; background:none; min-height:0; overflow:hidden;}
 .img-ph > img{width:100%; height:100%; object-fit:cover; border-radius:inherit;}
+/* Square logo artwork on a navy field: show it whole instead of cropping */
+.img-ph.on-navy{background:var(--navy);}
+.img-ph.on-navy > img{object-fit:contain;}
 
 /* ---------- ABOUT ---------- */
 .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;}
