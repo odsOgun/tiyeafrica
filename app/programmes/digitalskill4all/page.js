@@ -30,8 +30,8 @@ export default function DigitalSkill4All() {
       {/* HERO PHOTO */}
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <div className="img-ph ratio-16x9 hero-photo-lg">
-            <CloudinaryImage width="1600" height="900" src="DSkill4all" alt="DigitalSkill4All training session" />
+          <div className="img-ph ratio-16x9 hero-photo-lg on-navy">
+            <img src="/img/digitalskill4all.webp" alt="DigitalSkill4All logo" />
           </div>
         </div>
       </section>
