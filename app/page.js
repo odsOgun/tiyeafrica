@@ -19,7 +19,7 @@ export default function Home() {
               <a href="#involved" className="btn btn-outline">Get Involved</a>
           </div>
             <div className="mini-stat-row" style={{ JustifyContent: 'center' }}>
-              <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>
+              <div className="mini-stat"><div className="ms-num">10,658+</div><div className="ms-label">Young people reached</div></div>
               <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
               <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Summit attendees</div></div>
             </div>
@@ -161,8 +161,8 @@ export default function Home() {
               </div>
             </div>
             <div className="prog-card c3">
-              <div className="img-ph ratio-4x3">
-                <CloudinaryImage width="1200" height="900" src="odsPreview" alt="Ogun Digital Summit event" />
+              <div className="img-ph ratio-4x3 on-navy">
+                <img src="/img/ogundigitalsummit.png" alt="Ogun Digital Summit logo" />
               </div>
               <div className="prog-card-body">
                 <div className="prog-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.9L21 12l-6.5 2.1L12 21l-2.5-6.9L3 12l6.5-2.1L12 3z" stroke="#F97316" strokeWidth="1.8" strokeLinejoin="round" /></svg></div>
@@ -182,7 +182,7 @@ export default function Home() {
           {/* <h2>Thousands of young people. One digital future.</h2> */}
           <p>Our programmes transform lives by turning digital skills and AI literacy into real opportunities for young people. See the numbers and the stories behind the work.</p>
           <div className="mini-stat-row" style={{ justifyContent: 'center' }}>
-            <div className="mini-stat"><div className="ms-num">23,856+</div><div className="ms-label">Young people reached</div></div>
+            <div className="mini-stat"><div className="ms-num">10,658+</div><div className="ms-label">Young people reached</div></div>
             <div className="mini-stat"><div className="ms-num">40+</div><div className="ms-label">Communities served</div></div>
             <div className="mini-stat"><div className="ms-num">7,865+</div><div className="ms-label">Ogun Digital Summit attendees</div></div>
           </div>

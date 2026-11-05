@@ -33,8 +33,8 @@ export default function AI4All() {
       {/* HERO PHOTO */}
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <div className="img-ph ratio-16x9 hero-photo-lg">
-            <CloudinaryImage width="1600" height="900" src="AIFORALL" alt="AI4All classroom session" />
+          <div className="img-ph ratio-16x9 hero-photo-lg on-navy">
+            <img src="/img/ai4all.webp" alt="AI4All logo" />
           </div>
         </div>
       </section>

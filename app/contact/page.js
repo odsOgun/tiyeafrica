@@ -119,7 +119,7 @@ export default function ContactPage() {
                 </a>
                 <div className="contact-info">
                   <span className="contact-info-icon" aria-hidden="true">+</span>
-                  <span><small>Location</small><strong>Africa</strong></span>
+                  <span><small>Location</small><strong>Suite 304, PROHUB, Salawu Olabode Avenue, Idi-aba, Abeokuta, Ogun State, Nigeria</strong></span>
                 </div>
                 <div className="contact-info">
                   <a href="tel:+2348068365951" className="contact-info">
